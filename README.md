@@ -19,11 +19,14 @@ https://data.muni.org/Housing-and-Homelessness/Girdwood-Residential-Value-Bedroo
 This data needs to be filtered to down to the most relevant details, including at least construction year, neighborhood, and home value. It will need to be joined with spatial data by Parcel ID number.
 
 ### b) medium for delivery
-A web page featuring an interactive map, explanatory text, images, a slider to visualize year by year, color-coded breakdowns by neighborhood demonstrating home value and build rates, and clickable individual properties with value graphs
+A web page featuring an interactive map, explanatory text, images, a slider to visualize year by year, color-coded breakdowns by neighborhood demonstrating home value and build rates, and clickable individual properties with graphs showing values
 ### c) layout
 Programmed for desktop and mobile, it will feature a full-width map embedded in scrollable web page, a slider and legend shown within the map, and popup graphs within clickable neighborhood zones and individual properties
 ### d) thematic representation
+A classified choropleth for neighborhood polygons and subdued zoomable lines within them for each individual parcel
 ### e) user interaction
-scrollable page, slider years, clickable neighborhoods for detailed investigation
-### f) design
+scrollable page, slidable years, hoverable neighborhoods and clickable properties for detailed investigation
+### f) aesthetics and design
+still considering design
+
  
