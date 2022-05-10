@@ -12,7 +12,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 GeoJSON.parse(data);
 
-L.marker([51.5, -0.09])
+L.marker([61.17024, -149.910765])
   .addTo(map)
   .bindPopup("A pretty CSS3 popup.<br> Easily customizable.")
   .openPopup();
