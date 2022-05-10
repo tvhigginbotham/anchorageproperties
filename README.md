@@ -6,7 +6,7 @@
    This project will visualize building over time in Anchorage, Alaska and analyze how a worsening lack of new housing units are contributing to skyrocketing real estate prices. The project will provide a background explanation of issue, focusing on key neighborhoods, contextualized with their histories as rush-built responses to prior housing crises.
 
 2. Methodology
-   Here I will describe the data sources, programming languages, and softwares used creating the story map.
+   muni data cleaned to necessary columns with panda, vacant properties removed with null value search in land use column, csv to geojson with qgis
 
 a) Data
 municipal boundaries and building data from CAMA data at data.muni.org, including: building year, bedroom count, and housing type.
@@ -29,7 +29,6 @@ e) user interaction
 scrollable page, content comes as user scrolls. can stop or scroll up to rewind
 
 f) aesthetics and design
-still considering design
 
 # Parcel + Leaftlet Starter
 
