@@ -29,25 +29,3 @@ e) user interaction
 scrollable page, content comes as user scrolls. can stop or scroll up to rewind
 
 f) aesthetics and design
-
-# Parcel + Leaftlet Starter
-
-## Get Started
-
-1. Install dependencies: `npm install`
-1. Run development server: `npm start`
-
-Then, you can open the site in your browser: http://localhost:1234/
-
-To stop the development server: CTRL+C
-
-## Debugging in Visual Studio Code
-
-To start a debugging session:
-
-1. Run `npm start`
-1. In Visual Studio Code, go to "Run and Debug" and "Launch Chrome against localhost"
-
-## Building for production
-
-`npm run build`
