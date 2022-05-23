@@ -49,10 +49,10 @@ var config = {
       ],
     },
     {
-      id: "paving?",
+      id: "tentcity",
       alignment: "right",
       hidden: false,
-      title: "Second Title",
+      title: "Tent City",
       image: "./path/to/image/source.png",
       description: "Copy these sections to add to your story.",
       location: {
@@ -70,8 +70,18 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: true,
       callback: "",
-      onChapterEnter: [],
-      onChapterExit: [],
+      onChapterEnter: [
+        {
+          layer: "anch1925",
+          opacity: 0.75,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "anch1925",
+          opacity: 0,
+        },
+      ],
     },
     {
       id: "conex",
