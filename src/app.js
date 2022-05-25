@@ -42,7 +42,7 @@ var config = {
       alignment: "right",
       hidden: false,
       title: "Tent City",
-      image: "State archive tent city photo",
+      image: "data/images/tentcity.jpg",
       description:
         "Explaining Anchorage's origins as a tent city for railroad workers and adventurers",
       location: {
@@ -74,7 +74,7 @@ var config = {
       alignment: "left",
       hidden: false,
       title: "Railroad Hub",
-      image: "State archive street paving, downtown homes",
+      image: "data/images/4thAve1920s.jpg",
       description:
         "Anchorage has steady but minor growth before 1939, remains a quiet town of railroad workers, about 4,000 people",
       location: {
@@ -97,15 +97,15 @@ var config = {
     },
     {
       id: "boom",
-      alignment: "left",
+      alignment: "right",
       hidden: false,
       title: "Population Boom",
-      image: "./path/to/image/source.png",
+      image: "data/images/4thAve1949.jpg",
       description:
         "World War II arrives. Only attacks on US soil outside of Pearl Harbor are in the Aleutians. Population booms in 1940s following construction of Fort Richardson",
       location: {
         center: [-149.87969, 61.15596],
-        zoom: 10,
+        zoom: 10.8,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -126,7 +126,7 @@ var config = {
       alignment: "fully",
       hidden: false,
       title: "Fort Richardson construction",
-      image: "fort richardson construction workers",
+      image: "data/images/fort-rich-soldiers.jpeg",
       description:
         "Required thousands of construction workers, brought thousands of soldiers, many with families. Prompted need for stores, schools, workers, teachers.",
       location: {
@@ -146,9 +146,9 @@ var config = {
       alignment: "fully",
       hidden: false,
       title: "Severe housing shortage",
-      image: "./path/to/image/source.png",
+      image: "data/images/alleyshack48.jpg",
       description:
-        "Overall, population grew from 4,000 in 1939 to 32,000 by 1950. Lack of longterm housing led to a rush for shortterm housing. Campsites on private lots, $70 nightly cots in rooms of 20 with no bath, etc",
+        "Overall, population grew from 4,000 in 1939 to 32,000 by 1950. Lack of longterm housing led to a rush for shortterm housing. Campsites on private lots, $70 nightly cots in rooms of 20 with no bath, etc. <img src='data/images/10thandG48.jpg' alt='source: Alaska State Library Archives'>",
       location: {
         center: [-149.66419, 61.25831],
         zoom: 11.92,
@@ -163,10 +163,10 @@ var config = {
     },
     {
       id: "lotcamps",
-      alignment: "left",
+      alignment: "center",
       hidden: false,
       title: "Any Means Necessary",
-      image: "./path/to/image/source.png",
+      image: "data/images/13thandC48.jpg",
       description:
         "Opportunistic landlords leapt at the scramble for housing, renting rooms, driveways, and partial lots. Like this lot at 13th ave and C St. Densely populated camp with shared outhouse: $50 ($550 today) per month for a small spot to park a car or trailer.",
       location: {
@@ -186,7 +186,6 @@ var config = {
       alignment: "right",
       hidden: false,
       title: "Boomtown life combined with postwar inflation",
-      image: "./path/to/image/source.png",
       description:
         "Prices skyrocketed, shortage of labor and materials, increase wages.",
       location: {
@@ -206,9 +205,9 @@ var config = {
       alignment: "center",
       hidden: false,
       title: "Kit Homes and Quonset huts",
-      image: "./path/to/image/source.png",
+      image: "data/images/kit-home-ad.jpg",
       description:
-        "Slow construction and lack of options led to rise in popularity of kit homes, mail-order homes shipped with building plans and needed parts. Many of these still survive, most notably in Airport Heights.",
+        "Slow construction and lack of options led to rise in popularity of kit homes, mail-order homes shipped with building plans and needed parts. Many of these still survive, most notably in Airport Heights. <img src='data/images/kit-home-ad.jpg' alt='source: Alaska State Library Archives'>",
       location: {
         center: [-149.82151, 61.20337],
         zoom: 14.46,
@@ -226,9 +225,9 @@ var config = {
       alignment: "fully",
       hidden: false,
       //title: "Third Title",
-      image: "./path/to/image/source.png",
+      image: "data/images/railroad-workers-quonset.jpg",
       description:
-        "Similarly, many people made use of surplussed military Quonset huts, converting them to schoolrooms, grocery stores, restaurants, and homes. Surviving huts can still be seen around Anchorage, often used as sheds or even retail stores.",
+        "Similarly, many people made use of surplussed military Quonset huts, converting them to schoolrooms, grocery stores, restaurants, and homes. Surviving huts can still be seen around Anchorage, often used as sheds or even retail stores. <img src='data/images/spenardquonset.jpg' alt='source: Alaska State Library Archives'>",
       location: {
         center: [-149.91381, 61.19663],
         zoom: 16.98,
