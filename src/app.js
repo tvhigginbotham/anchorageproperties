@@ -3,12 +3,12 @@ var config = {
   style: "mapbox://styles/tvhigginbotham/cl2jg1i9d00ve14o9jq9b1ua6",
   accessToken:
     "pk.eyJ1IjoidHZoaWdnaW5ib3RoYW0iLCJhIjoiY2wzZGt4eHc1MDFmdjNkbnY2c2FhMnJmYSJ9.zDJvq-KT0bjy9XsKoRcTCw",
-  showMarkers: true,
-  markerColor: "#3FB1CE",
+  showMarkers: false,
+  //markerColor: "#3FB1CE",
   //projection: 'equirectangular',
   //Read more about available projections here
   //https://docs.mapbox.com/mapbox-gl-js/example/projections/
-  inset: true,
+  inset: false,
   theme: "light",
   use3dTerrain: false, //set true for enabling 3D maps.
   title: "Kit Homes and Quonset Huts",
@@ -19,15 +19,15 @@ var config = {
   chapters: [
     {
       id: "intro",
-      alignment: "left",
+      alignment: "right",
       hidden: false,
       title: "Introduction",
       image: "Skyline image of Anchorage taken by me",
       description:
         "Introductory paragraph in the context of the current housing shortage. This will lead into the historical background of the following chapters.",
       location: {
-        center: [-149.87969, 61.15596],
-        zoom: 10.83,
+        center: [-149.88577, 61.1654],
+        zoom: 9.9,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -222,7 +222,7 @@ var config = {
       onChapterExit: [],
     },
     {
-      id: "now",
+      id: "quonset",
       alignment: "fully",
       hidden: false,
       //title: "Third Title",
