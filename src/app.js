@@ -12,14 +12,14 @@ var config = {
   theme: "light",
   use3dTerrain: false, //set true for enabling 3D maps.
   title: "Kit Homes and Quonset Huts",
-  subtitle: "A History of Anchorage's Housing Crisis",
+  subtitle: "A Housing History of Anchorage",
   byline: "By Tim Higginbotham",
   footer:
     'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template. Other sources: David Reamer etc.',
   chapters: [
     {
       id: "intro",
-      alignment: "right",
+      alignment: "fully",
       hidden: false,
       title: "Introduction",
       image: "Skyline image of Anchorage taken by me",
@@ -97,7 +97,7 @@ var config = {
     },
     {
       id: "richardson",
-      alignment: "fully",
+      alignment: "right",
       hidden: true,
       title: "Fort Richardson construction",
       image: "data/images/fort-rich-soldiers.jpeg",
@@ -125,7 +125,7 @@ var config = {
     },
     {
       id: "richardson2",
-      alignment: "fully",
+      alignment: "right",
       hidden: false,
       title: "Fort Richardson construction",
       image: "data/images/fort-rich-soldiers.jpeg",
@@ -145,7 +145,7 @@ var config = {
     },
     {
       id: "boom",
-      alignment: "right",
+      alignment: "left",
       hidden: false,
       title: "Population Boom",
       image: "data/images/4thAve1949.jpg",
@@ -171,7 +171,7 @@ var config = {
     },
     {
       id: "shortage",
-      alignment: "fully",
+      alignment: "left",
       hidden: false,
       title: "Severe housing shortage",
       image: "data/images/alleyshack48.jpg",
@@ -191,7 +191,7 @@ var config = {
     },
     {
       id: "lotcamps",
-      alignment: "center",
+      alignment: "left",
       hidden: false,
       title: "Any Means Necessary",
       image: "data/images/13thandC48.jpg",
@@ -211,7 +211,7 @@ var config = {
     },
     {
       id: "inflation",
-      alignment: "right",
+      alignment: "center",
       hidden: false,
       title: "Boomtown life combined with postwar inflation",
       description:
@@ -230,7 +230,7 @@ var config = {
     },
     {
       id: "kithomes",
-      alignment: "center",
+      alignment: "left",
       hidden: false,
       title: "Kit Homes and Quonset huts",
       image: "data/images/kit-home-ad.jpg",
@@ -250,7 +250,7 @@ var config = {
     },
     {
       id: "quonset",
-      alignment: "fully",
+      alignment: "left",
       hidden: false,
       //title: "Third Title",
       image: "data/images/railroad-workers-quonset.jpg",
@@ -308,7 +308,7 @@ var config = {
     },
     {
       id: "50s60s",
-      alignment: "fully",
+      alignment: "right",
       hidden: false,
       title: "1950-1969: A Period of Steady Growth",
       image: "./path/to/image/source.png",
@@ -333,7 +333,7 @@ var config = {
     },
     {
       id: "oilyears",
-      alignment: "fully",
+      alignment: "right",
       hidden: false,
       title: "1970-89: The Oil Years",
       image: "data/images/pipelineworkers.jpg",
@@ -357,7 +357,8 @@ var config = {
       hidden: false,
       //title: "Oil Years: Construction",
       image: "./path/to/image/source.png",
-      description: "Copy these sections to add to your story.",
+      description:
+        "Workers 2 weeks on 2 weeks off, families, many stay permanently",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
@@ -369,7 +370,7 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
-          layer: "anch71-80",
+          layer: "anch70-79",
           opacity: 1,
           duration: 7000,
         },
@@ -378,11 +379,12 @@ var config = {
     },
     {
       id: "oilyears3",
-      alignment: "fully",
+      alignment: "right",
       hidden: false,
       //title: "Third Title",
-      image: "data/images/downtown80s",
-      description: "Copy these sections to add to your story.",
+      image: "data/images/BPbldg.jpg",
+      description:
+        "oil production reaches all time peak in 1983, soon followed by all-time peak in residential construction. pop grows from 174k-226k.",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
@@ -394,7 +396,85 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
-          layer: "anch81-90",
+          layer: "anch80-89",
+          opacity: 1,
+          duration: 7000,
+        },
+      ],
+      onChapterExit: [],
+    },
+    {
+      id: "90s2000s",
+      alignment: "left",
+      hidden: false,
+      title: "1990-2003: The Final Years of Building Growth",
+      image: "data/images/BPbldg.jpg",
+      description:
+        "oil production reaches all time peak in 1983, soon followed by all-time peak in residential construction. pop grows from 174k-226k.",
+      location: {
+        center: [-149.87969, 61.15596],
+        zoom: 10.8,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "anch90-99",
+          opacity: 1,
+          duration: 7000,
+        },
+      ],
+      onChapterExit: [],
+    },
+    {
+      id: "just2000s",
+      alignment: "left",
+      hidden: false,
+      //title: "1990-2003: The Final Years of Building Growth",
+      image: "data/images/BPbldg.jpg",
+      description:
+        "oil production reaches all time peak in 1983, soon followed by all-time peak in residential construction. pop grows from 174k-226k.",
+      location: {
+        center: [-149.87969, 61.15596],
+        zoom: 10.8,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "anch2000-2008",
+          opacity: 1,
+          duration: 7000,
+        },
+      ],
+      onChapterExit: [],
+    },
+    {
+      id: "2009-now",
+      alignment: "fully",
+      hidden: false,
+      title: "A New Housing Crisis",
+      image: "data/images/BPbldg.jpg",
+      description:
+        "Stagnation, decline. Bidding wars, severe shortage, echoes of 1940 only instead of a booming city, now a city in decline, forcing its residents out and dissuading new ones from coming in due to lack of any housing at all, let alone affordable",
+      location: {
+        center: [-149.87969, 61.15596],
+        zoom: 10.8,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "anch2009-19",
           opacity: 1,
           duration: 7000,
         },
