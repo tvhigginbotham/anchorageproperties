@@ -27,7 +27,7 @@ var config = {
         "Introductory paragraph in the context of the current housing shortage. This will lead into the historical background of the following chapters.",
       location: {
         center: [-149.88577, 61.1654],
-        zoom: 9.9,
+        zoom: 10.07,
         pitch: 0.0,
         bearing: 0.0,
       },
