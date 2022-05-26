@@ -336,19 +336,25 @@ var config = {
       alignment: "right",
       hidden: false,
       title: "1970-89: The Oil Years",
-      image: "data/images/pipelineworkers.jpg",
+      //image: "data/images/pipelineworkers.jpg",
       description:
         "Oil ramps up, pipeline approved then built, Anchorage remains economic hub and headquarters",
       location: {
-        center: [-149.64054, 64.06236],
-        zoom: 4.35,
-        pitch: 45.0,
+        center: [-149.64054, 64.46236],
+        zoom: 4,
+        pitch: 10.0,
         bearing: 0.0,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "pipeline",
+          opacity: 1,
+          duration: 7000,
+        },
+      ],
       onChapterExit: [],
     },
     {
@@ -356,7 +362,7 @@ var config = {
       alignment: "right",
       hidden: false,
       //title: "Oil Years: Construction",
-      image: "./path/to/image/source.png",
+      image: "data/images/pipelineworkers.jpg",
       description:
         "Workers 2 weeks on 2 weeks off, families, many stay permanently",
       location: {
