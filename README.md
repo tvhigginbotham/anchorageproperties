@@ -1,9 +1,11 @@
-#Then and Now: Housing Crises in Anchorage
-##Subhed
-###A story map designed by Tim Higginbotham as part of the University of Kentucky New Maps Plus graduate program
+# Then and Now: Housing Crises in Anchorage
+
+## Subhed
+
+### A story map designed by Tim Higginbotham as part of the University of Kentucky New Maps Plus graduate program
 
 1. Introduction:
-   This project will visualize building over time in Anchorage, Alaska and analyze how a worsening lack of new housing units are contributing to skyrocketing real estate prices. The project will provide a background explanation of issue, focusing on key neighborhoods, contextualized with their histories as rush-built responses to prior housing crises.
+   This visualizes building over time in Anchorage, Alaska, from its origins as a small tent settlement to Alaska's largest city. Following a major post-World War II population expansion, Anchorage faced a severe housing shortage, forcing newcomers to pay outlandish prices for low-quality short-term housing in the hopes of someday finding a longterm home. Today, after decades of continued growth, building has slowed to a crawl, creating another serious housing shortage. From 1950-1990, Anchorage was urgently building to house a growing population. But now, the city has stagnated, the population is declining for the first time, and the rate of building can't meet the current population's demands. Houses put up for sale are selling in 3 days, the prices driven well over asking in bidding wars, deterring newcomers and forcing out locals.
 
 2. Methodology
    muni data cleaned to necessary columns with panda, vacant properties removed with null value search in land use column, csv to geojson with qgis
