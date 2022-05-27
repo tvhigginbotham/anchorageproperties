@@ -12,11 +12,11 @@ This visualizes building over time in Anchorage, Alaska, from its origins as a s
 
 **A) Data**
 
-- Housing data was sourced from the Municipality of Anchorage Property Appraisal Division's residential property inventory. https://data.muni.org/Housing-and-Homelessness/CAMA-Property-Inventory-Residential-with-Details/r3di-nq2j. The dataset was downloaded as a CSV and cleaned, reduced and organized using Python 3 via Jupyter notebooks to include only point geographies and the year built for each property. The data was then split chronologically by year built into eight CSV files, which were uploaded as separate Mapbox layers.
-- Historical photographs were primarily found using the Alaska Digital Archives https://vilda.alaska.edu/ and belong to the University of Alaska and the Alaska State Library. Other photos used are licensed under Creative Commons by Wordpress users aldenjewell and Travis S.
-- A shapefile of the Trans-Alaska Pipeline System was downloaded from the State of Alaska Geoportal https://gis.data.alaska.gov/datasets/e36c4585bb7d4f6d988853a16f5ecd26.
+- Housing data was sourced from the Municipality of Anchorage Property Appraisal Division's [residential property inventory](https://data.muni.org/Housing-and-Homelessness/CAMA-Property-Inventory-Residential-with-Details/r3di-nq2j). The dataset was downloaded as a CSV and cleaned, reduced and organized using Python 3 via Jupyter notebooks to include only point geographies and the year built for each property. The data was then split chronologically by year built into eight CSV files, which were uploaded as separate Mapbox layers.
+- Historical photographs were primarily found using the [Alaska Digital Archives](https://vilda.alaska.edu/) and belong to the University of Alaska and the Alaska State Library. Other photos used are licensed under Creative Commons by Wordpress users aldenjewell and Travis S.
+- A shapefile of the Trans-Alaska Pipeline System was downloaded from the [State of Alaska Geoportal](https://gis.data.alaska.gov/datasets/e36c4585bb7d4f6d988853a16f5ecd26).
 - Georeferenced historical aerial photography will be sourced from the Municipality of Anchorage GIS Department.
-- Historical research drawn from David Reamer's https://www.adn.com/alaska-life/2021/03/29/how-a-mid-century-housing-crisis-left-its-mark-on-todays-anchorage-neighborhoods/
+- Historical research drawn from David Reamer's ["How A Mid-Century Housing Crisis Left Its Mark On Today's Anchorage"](https://www.adn.com/alaska-life/2021/03/29/how-a-mid-century-housing-crisis-left-its-mark-on-todays-anchorage-neighborhoods/).
 
 **B) Medium for Delivery**
 This project is presented as a web-based application accessible by desktop and mobile devices. The basemap and data layers are hosted on and were designed using Mapbox. Code needed to create a scrollable story map was borrowed heavily from https://github.com/mapbox/storytelling.
