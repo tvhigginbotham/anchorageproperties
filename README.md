@@ -1,33 +1,40 @@
-# Then and Now: Housing Crises in Anchorage
+# Kit Homes and Quonset Huts: A Housing History of Anchorage
 
-## Subhed
+![Anchorage as a Tent City](data/images/tentcity.jpg?raw=true "Title")
 
-### A story map designed by Tim Higginbotham as part of the University of Kentucky New Maps Plus graduate program
+## A story map designed by Tim Higginbotham as part of the University of Kentucky New Maps Plus graduate program
 
 1. Introduction:
    This visualizes building over time in Anchorage, Alaska, from its origins as a small tent settlement to Alaska's largest city. Following a major post-World War II population expansion, Anchorage faced a severe housing shortage, forcing newcomers to pay outlandish prices for low-quality short-term housing in the hopes of someday finding a longterm home. Today, after decades of continued growth, building has slowed to a crawl, creating another serious housing shortage. From 1950-1990, Anchorage was urgently building to house a growing population. But now, the city has stagnated, the population is declining for the first time, and the rate of building can't meet the current population's demands. Houses put up for sale are selling in 3 days, the prices driven well over asking in bidding wars, deterring newcomers and forcing out locals.
 
 2. Methodology
-   muni data cleaned to necessary columns with panda, vacant properties removed with null value search in land use column, csv to geojson with qgis
 
 a) Data
-municipal boundaries and building data from CAMA data at data.muni.org, including: building year, bedroom count, and housing type.
-neighborhood boundaries via anchorage muni data condensed and processed into geojson using turf
-census data for race, income, focused on key neighborhoods of Nunaka Valley, South Addition, Thunderbird Heights, Mountain View
-images pulled from historical archives with help of local historian David Reamer.
-Possibly videos, newspaper clippings, designed graphs and charts https://data.muni.org/Housing-and-Homelessness/CAMA-Property-Inventory-Residential-and-Commercial/yfin-h3vh https://data.muni.org/Housing-and-Homelessness/Girdwood-Residential-Value-Bedrooms-example-/6dj9-bj4e
+
+- Housing data was sourced from the Municipality of Anchorage Property Appraisal Division's residential property inventory. https://data.muni.org/Housing-and-Homelessness/CAMA-Property-Inventory-Residential-with-Details/r3di-nq2j. The dataset was downloaded as a CSV and cleaned, reduced and organized using Python 3 via Jupyter notebooks to include only point geographies and the year built for each property. The data was then split chronologically by year built into eight CSV files, which were uploaded as separate Mapbox layers.
+- Historical photographs were primarily found using the Alaska Digital Archives https://vilda.alaska.edu/ and belong to the University of Alaska and the Alaska State Library. Other photos used are licensed under Creative Commons by Wordpress users aldenjewell and Travis S.
+- A shapefile of the Trans-Alaska Pipeline System was downloaded from the State of Alaska Geoportal https://gis.data.alaska.gov/datasets/e36c4585bb7d4f6d988853a16f5ecd26.
+- Georeferenced historical aerial photography will be sourced from the Municipality of Anchorage GIS Department.
+- Historical research drawn from David Reamer's https://www.adn.com/alaska-life/2021/03/29/how-a-mid-century-housing-crisis-left-its-mark-on-todays-anchorage-neighborhoods/
+
 b) medium for delivery
-A multimedia scrollable story map telling story of Anchorage's housing supply. Inspiration: https://bellingham.maps.arcgis.com/apps/Cascade/index.html?appid=ad0a1daf65f94df690d06c75e2d0f9ff
+This project is presented as a web-based application accessible by desktop and mobile devices. The basemap and data layers are hosted on and were designed using Mapbox. Code needed to create a scrollable story map was borrowed heavily from https://github.com/mapbox/storytelling.
+
+The technology stack for this project includes HTML, CSS, and Javascript.
 
 c) layout
-Programmed for desktop and mobile, it will feature a full-width map embedded in scrollable story map with data visualization and images, videos. Current outlook: bidding wars, low vacancy rates, rising rents and sales.
+This project will be presented as a scrollable story map accessible by desktop and mobile devices. It will feature a fullscreen Mapbox basemap with chapter divs containing text and images that tell the history of housing in Anchorage. The basemap width and chapter text boxes will be resized to fit fullscreen and mobile devices.
 
-How we got here: prior shortages, major crises, rapid builds to meet growth, gave rise to key neighborhoods, including mixed income, low income housing. Profile of key neighborhoods
-Where those neighborhoods stand today: current sales data, occupancy rate
-What comes next?
-Inspiration: https://bellingham.maps.arcgis.com/apps/Cascade/index.html?appid=ad0a1daf65f94df690d06c75e2d0f9ff
 d) thematic representation
+Each residential property in Anchorage will be represented by point features categorized by color according to building era broken down into the following ranges of years: 1925 and earlier (tent city days); 1926-40 (slow growth as a railroad hub); 1941-69 (post-World War II housing crisis and building boom); 70-79 (early oil years); 80-89(oil boom); 90-2008 (continued growth); and 2009-2019 (stagnation). A legend on screen will explain this to the reader.
+
+The Trans-Alaska Pipeline System will be represented by a line feature.
+
 e) user interaction
-scrollable page, content comes as user scrolls. can stop or scroll up to rewind
+The user engages with the story map as the would a news article -- scrolling down the page, prompting new text, images, and data to populate on screen. Point features representing residential buildings will appear on screen according to year built throughout the story. Text boxes, broken into chapters, will contain the text and images that explain the story to the reader.
 
 f) aesthetics and design
+The basemap is been designed simply in order to not crowd or distract from the text, while allowing point features to be highly visible and notable when they appear. Labels, roads, and geographic features, aside from water and land, have been hidden or minimized.
+
+g) conclusion
+Anchorage was unprepared for the growth it experienced in the 1940s and 50s and, as such, was ultimately unable to prevent a housing crisis that severely impacted the health, safety, and wealth of locals and newcomers. Eventually, through urgent building, it was able to grow into its new shoes and survive the growing pains of the oil boom in the 70s and 80s, emerging as a major hub and Alaska's largest city. But with building growth slowed to a crawl, Anchorage lacks the housing supply needed for its current population. This has brought a new kind of housing crisis to the city, sparked not by growth, but by stagnation. Anchorage is a city in decline, and will be until it meets the needs of its population.
