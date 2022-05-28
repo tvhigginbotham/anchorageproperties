@@ -11,11 +11,11 @@ var config = {
   inset: false,
   theme: "light",
   use3dTerrain: false, //set true for enabling 3D maps.
-  title: "Kit Homes and Quonset Huts",
+  title: "Building out of a Crisis",
   subtitle: "A Housing History of Anchorage",
   byline: "By Tim Higginbotham",
   footer:
-    'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template. Other sources: David Reamer etc.',
+    'Data sources: Municipality of Anchorage Open Data Portal, State of Alaska Department of Natural Resources <br> Research sources: David Reamer, TK <br> Coding source: <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a>.',
   chapters: [
     {
       id: "intro",
@@ -24,7 +24,7 @@ var config = {
       title: "Introduction",
       image: "Skyline image of Anchorage taken by me",
       description:
-        "This storymap visualizes building over time in Anchorage, Alaska, from its origins as a small tent settlement to Alaska's largest city. Following a major post-World War II population expansion, Anchorage faced a severe housing shortage, forcing newcomers to pay outlandish prices for low-quality short-term housing in the hopes of someday finding a longterm home. Today, after decades of continued growth, building has slowed to a crawl, creating another serious housing shortage. From 1950-1990, Anchorage was urgently building to house a growing population. But now, the city has stagnated, the population is declining for the first time, and the rate of building can't meet the current population's demands. Houses put up for sale are selling in 3 days, the prices driven well over asking in bidding wars, deterring newcomers and forcing out locals.",
+        "In the century since it was founded as a small tent city to serve as the Alaska Railroad Headquarters in 1914, Anchorage has grown to become Alaska’s largest city and an international transport hub — but not without growing pains. Following a major post-World War II population expansion, Anchorage faced a severe housing shortage, forcing newcomers to pay outlandish prices for low-quality short-term housing in the hopes of someday finding a long-term home. Through decades of building, the city eventually reached something close to a stable housing market. But in recent years, building has slowed to a crawl, creating another serious housing shortage. The city’s growth has stagnated — the population is declining for the first time ever and the rate of building can’t meet the current population’s demands. Vacancy rates in rental units are dropping fast, houses put up for sale are selling in a matter of days with their prices driven up by bidding wars, forcing out locals in the rental and buying markets alike. <p> Anchorage built its way out of past crises, and it needs to do the same again. This crisis is different — caused by decline and stagnation rather than rapid growth — but the solution is the same.",
       location: {
         center: [-149.88577, 61.1654],
         zoom: 10.07,
@@ -44,7 +44,7 @@ var config = {
       title: "Tent City",
       image: "data/images/tentcity.jpg",
       description:
-        "Explaining Anchorage's origins as a tent city for railroad workers and adventurers",
+        "Anchorage was founded as a small tent city to headquarter the Alaska Railroad in 1914. Populated almost entirely by railroad and construction workers, it operated as a company town in its first years. By 1920, as many as 2,000 people lived in tents and makeshift shelters with up to 100 more arriving each week. Sanitation conditions were poor, prompting the urgent need to quickly build adequate housing.",
       location: {
         center: [-149.89716, 61.21848],
         zoom: 13,
@@ -76,7 +76,7 @@ var config = {
       title: "Railroad Hub",
       image: "data/images/4thAve1920s.jpg",
       description:
-        "Anchorage has steady but minor growth before 1939, remains a quiet town of railroad workers, about 4,000 people",
+        "The 20s and 30s brought Anchorage slow, steady growth, allowing it to settle into its newfound stature as a civilian town in its own right. By 1939, the population stood at 4,000, centered mainly around its original downtown grid site near Ship Creek. Roads were paved, theaters and restaurants opened, and safe, long-term housing built.",
       location: {
         center: [-149.89716, 61.21848],
         zoom: 12,
@@ -101,8 +101,7 @@ var config = {
       hidden: true,
       title: "Fort Richardson construction",
       image: "data/images/fort-rich-soldiers.jpeg",
-      description:
-        "Required thousands of construction workers, brought thousands of soldiers, many with families. Prompted need for stores, schools, workers, teachers.",
+      description: "",
       location: {
         center: [-149.66419, 61.25831],
         zoom: 11.92,
@@ -130,7 +129,7 @@ var config = {
       title: "Fort Richardson construction",
       image: "data/images/fort-rich-soldiers.jpeg",
       description:
-        "Required thousands of construction workers, brought thousands of soldiers, many with families. Prompted need for stores, schools, workers, teachers.",
+        "In 1940-41, the US military constructed Fort Richardson and Elmendorf Air Force Base, two major military bases deemed necessary due to the Pacific threat from Japan, particularly attacks on Alaska’s Aleutian Islands. The bases brought thousands of soldiers and construction workers to Anchorage — many of whom brought families — prompting the need for new groceries, schools, teachers, and workers in general. As a result, the population of Anchorage tripled from 1939-1942, growing from 4,000 to 12,000, and exploded to over 44,000 by 1960.",
       location: {
         center: [-149.66419, 61.25831],
         zoom: 11.92,
@@ -150,7 +149,7 @@ var config = {
       title: "Population Boom",
       image: "data/images/4thAve1949.jpg",
       description:
-        "World War II arrives. Only attacks on US soil outside of Pearl Harbor are in the Aleutians. Population booms in 1940s following construction of Fort Richardson",
+        " A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had no chance whatsoever at securing a stable, long-term home, and were forced instead to find short-term shelter by any means necessary. Privies, shacks, and yes, tents, were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
