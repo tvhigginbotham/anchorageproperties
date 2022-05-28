@@ -27,8 +27,10 @@ The technology stack for this project includes HTML, CSS, and Javascript.
 This project will be presented as a scrollable story map accessible by desktop and mobile devices. It will feature a fullscreen Mapbox basemap with chapter divs containing text and images that tell the history of housing in Anchorage. The basemap width and chapter text boxes will be resized to fit fullscreen and mobile devices.
 
 ![first sketch](src/data/images/IMG_2468.jpg?raw=true "First draft sketch of map layout")
+
 First draft sketch of map layout -- originally intended to have forward and back buttons and clickable popup stories.
 ![second sketch](src/data/images/IMG_2469.jpg?raw=true "Second draft sketch of map layout")
+
 Second draft sketch of map layout, which helped me zero in on the final idea.
 
 **D) Thematic Representation**
