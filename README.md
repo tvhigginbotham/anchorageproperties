@@ -29,6 +29,7 @@ This project will be presented as a scrollable story map accessible by desktop a
 ![first sketch](src/data/images/IMG_2468.jpg?raw=true "First draft sketch of map layout")
 
 First draft sketch of map layout -- originally intended to have forward and back buttons and clickable popup stories.
+
 ![second sketch](src/data/images/IMG_2469.jpg?raw=true "Second draft sketch of map layout")
 
 Second draft sketch of map layout, which helped me zero in on the final idea.
