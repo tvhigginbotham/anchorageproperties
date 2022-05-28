@@ -27,7 +27,9 @@ The technology stack for this project includes HTML, CSS, and Javascript.
 This project will be presented as a scrollable story map accessible by desktop and mobile devices. It will feature a fullscreen Mapbox basemap with chapter divs containing text and images that tell the history of housing in Anchorage. The basemap width and chapter text boxes will be resized to fit fullscreen and mobile devices.
 
 ![first sketch](src/data/images/IMG_2468.jpg?raw=true "First draft sketch of map layout")
+First draft sketch of map layout -- originally intended to have forward and back buttons and clickable popup stories.
 ![second sketch](src/data/images/IMG_2469.jpg?raw=true "Second draft sketch of map layout")
+Second draft sketch of map layout, which helped me zero in on the final idea.
 
 **D) Thematic Representation**
 Each residential property in Anchorage will be represented by point features categorized by color according to building era broken down into the following ranges of years: 1925 and earlier (tent city days); 1926-40 (slow growth as a railroad hub); 1941-69 (post-World War II housing crisis and building boom); 70-79 (early oil years); 80-89(oil boom); 90-2008 (continued growth); and 2009-2019 (stagnation). A legend on screen will explain this to the reader.
