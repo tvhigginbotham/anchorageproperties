@@ -343,7 +343,7 @@ var config = {
     {
       id: "oilyears3",
       alignment: "right",
-      hidden: false,
+      hidden: true,
       //title: "Third Title",
       image: "data/images/BPbldg.jpg",
       description:
@@ -373,7 +373,7 @@ var config = {
       title: "1990-2003: The Final Years of Building Growth",
       image: "data/images/BPbldg.jpg",
       description:
-        "oil production reaches all time peak in 1983, soon followed by all-time peak in residential construction. pop grows from 174k-226k.",
+        "After the oil boom, Anchorage settled into its new stature as a significant US city. It continued building and developing its own culture as neighborhoods filled out and life evolved with the times.",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
@@ -386,6 +386,11 @@ var config = {
       onChapterEnter: [
         {
           layer: "anch90-99",
+          opacity: 1,
+          duration: 7000,
+        },
+        {
+          layer: "anch2000-2008",
           opacity: 1,
           duration: 7000,
         },
@@ -410,11 +415,6 @@ var config = {
       rotateAnimation: false,
       callback: "",
       onChapterEnter: [
-        {
-          layer: "anch2000-2008",
-          opacity: 1,
-          duration: 7000,
-        },
       ],
       onChapterExit: [],
     },

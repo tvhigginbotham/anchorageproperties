@@ -45,5 +45,5 @@ The user engages with the story map as the would a news article -- scrolling dow
 **F) Aesthetics and Design**
 The basemap is been designed simply in order to not crowd or distract from the text, while allowing point features to be highly visible and notable when they appear. Labels, roads, and geographic features, aside from water and land, have been hidden or minimized.
 
-**G) conclusion**
+**G) Conclusion**
 Anchorage was unprepared for the growth it experienced in the 1940s and 50s and, as such, was ultimately unable to prevent a housing crisis that severely impacted the health, safety, and wealth of locals and newcomers. Eventually, through urgent building, it was able to grow into its new shoes and survive the growing pains of the oil boom in the 70s and 80s, emerging as a major hub and Alaska's largest city. But with building growth slowed to a crawl, Anchorage lacks the housing supply needed for its current population. This has brought a new kind of housing crisis to the city, sparked not by growth, but by stagnation. Anchorage is a city in decline, and will be until it meets the needs of its population.
