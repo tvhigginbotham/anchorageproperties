@@ -373,7 +373,7 @@ var config = {
       title: "1990-2003: The Final Years of Building Growth",
       image: "data/images/BPbldg.jpg",
       description:
-        "After the oil boom, Anchorage settled into its new stature as a significant US city. It continued building and developing its own culture as neighborhoods filled out and life evolved with the times.",
+        "After the oil boom, Anchorage settled into its stature as a newly significant US city. It continued building and developing its own culture as neighborhoods filled out and life evolved with the times.",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
@@ -404,7 +404,7 @@ var config = {
       //title: "1990-2003: The Final Years of Building Growth",
       image: "data/images/BPbldg.jpg",
       description:
-        "oil production reaches all time peak in 1983, soon followed by all-time peak in residential construction. pop grows from 174k-226k.",
+        "With its population still growing — it didn’t peak until 2016 — Anchorage’s residential construction began decreasing in 2003. *chart*",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
@@ -425,7 +425,7 @@ var config = {
       title: "A New Housing Crisis",
       image: "data/images/BPbldg.jpg",
       description:
-        "Stagnation, decline. Bidding wars, severe shortage, echoes of 1940 only instead of a booming city, now a city in decline, forcing its residents out and dissuading new ones from coming in due to lack of any housing at all, let alone affordable",
+        "In recent years it has reached a point of crisis — an unfamiliar crisis for a city whose shortages have historically come during booms rather than periods of decline. From 2018 to 2019, home prices increased ____. From 2019-2020, they increased ____. From 2020-2021, ____. Meanwhile, rents have increased from ___ to ____ in that span. A shortage of units, stagnated construction, a diminished amount of buildable land, and an overall surge in the national housing market have made the city worse for buyers and renters than ever before. Bidding wars drive home sales well over asking price. Homes stay on the market for an average of _ days. Landlords hike rents regularly, forcing longterm Anchorage residents out of their homes.<p>Vacancy rates in apartments dropped in 2021 from 9.2% to 4.3%. A recent U.S. Census Bureau Household Pulse Survey found that more than 30% of Alaskan adults live in homes that are not current on rent or mortgages, where eviction is likely in the next two months. And between January and November 2021, more than 15,000 Alaskans accessed homeless services.<p>In short, people in Anchorage are challenged to find a place to live. And when they can, they can seldom afford it. While this housing shortage doesn’t share a cause with Anchorage’s 20th century shortages, its does share a solution: in order to house its population and encourage a return to growth and prosperity, Anchorage must build.",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
