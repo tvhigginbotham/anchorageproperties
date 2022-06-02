@@ -12,6 +12,12 @@
       type="image/x-icon"
       href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
     <link
       href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css"
@@ -24,10 +30,10 @@
       body {
         margin: 0;
         padding: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 16px;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
         line-height: 1.2;
-        opacity: 95;
+        opacity: 98;
       }
       a,
       a:hover,
@@ -46,7 +52,6 @@
         position: relative;
         opacity: 95%;
         background-color: #1c6a80;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: rgb(240, 238, 238);
         z-index: 5;
         border-bottom: 7px groove darkgrey;
@@ -57,6 +62,7 @@
         margin: 0;
         padding: 2vh 2vw;
         text-align: center;
+        font-family: "Raleway", sans-serif;
       }
       #footer {
         width: 100%;
@@ -79,6 +85,7 @@
       .centered {
         width: 50vw;
         margin: 0 auto;
+        opacity: 95;
       }
       .lefty {
         width: 33vw;
@@ -107,16 +114,17 @@
       .step {
         padding-bottom: 50vh;
         /* margin-bottom: 10vh; */
-        opacity: 0.25;
+        opacity: 0.98;
       }
       .step.active {
-        opacity: 0.9;
+        opacity: 0.98;
       }
 
       .step div {
         padding: 25px 50px;
-        line-height: 25px;
-        font-size: 13px;
+        line-height: 28px;
+        font-size: 16px;
+        font-family: "Lato", sans-serif;
       }
 
       .step img {
