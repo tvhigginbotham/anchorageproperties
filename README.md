@@ -1,6 +1,6 @@
 # Kit Homes and Quonset Huts: A Housing History of Anchorage
 
-![Anchorage as a Tent City](src/data/images/tentcity.jpg?raw=true "Anchorage as a Tent City")
+![Anchorage as a Tent City](data/images/tentcity.jpg?raw=true "Anchorage as a Tent City")
 
 ## A story map designed by Tim Higginbotham as part of the University of Kentucky New Maps Plus graduate program
 
