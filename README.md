@@ -1,4 +1,4 @@
-# Kit Homes and Quonset Huts: A Housing History of Anchorage
+# Building out of Crisis: A Housing History of Anchorage
 
 ![Anchorage as a Tent City](data/images/tentcity.jpg?raw=true "Anchorage as a Tent City")
 
