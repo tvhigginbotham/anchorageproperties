@@ -65,7 +65,7 @@ var config = {
         {
           layer: "anch1925",
           opacity: 1,
-          duration: 200,
+          duration: 400,
         },
       ],
     },
@@ -101,87 +101,36 @@ var config = {
       title: "Railroad Hub",
       image: "data/images/4thAve1920s.jpg",
       description:
-        "The 20s and 30s brought Anchorage slow, steady growth, allowing it to settle into its newfound stature as a civilian town in its own right. By 1939, the population reached 4,000, centered mainly around its original downtown grid site near Ship Creek. Roads were paved, theaters and restaurants opened, and safe, long-term housing built.",
+        "The 20s and 30s brought Anchorage slow, steady growth as it became a civilian town in its own right. By 1939, the population reached 4,000, centered mainly around its original downtown grid site near Ship Creek. Roads were paved, theaters and restaurants opened, and safe, long-term housing built.",
       location: {
-        center: [-149.89716, 61.21848],
-        zoom: 12,
-        pitch: 20.0,
+        center: [-149.86665, 61.19647],
+        zoom: 11.91,
+        pitch: 45.0,
         bearing: 0.0,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
       onChapterEnter: [],
-      onChapterExit: [],
+      onChapterExit: [
+        {
+          layer: "anch26-40",
+          opacity: 1,
+          duration: 1000,
+        },
+      ],
     },
     {
       id: "railhub2",
-      alignment: "left",
+      alignment: "right",
       hidden: false,
       title: "Residential Buildings - 1914-1940",
       //image: "data/images/4thAve1920s.jpg",
       //description:
       //"The 20s and 30s brought Anchorage slow, steady growth, allowing it to settle into its newfound stature as a civilian town in its own right. By 1939, the population stood at 4,000, centered mainly around its original downtown grid site near Ship Creek. Roads were paved, theaters and restaurants opened, and safe, long-term housing built.",
       location: {
-        center: [-149.89716, 61.21848],
-        zoom: 12,
-        pitch: 20.0,
-        bearing: 0.0,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        {
-          layer: "anch26-40",
-          opacity: 1,
-          duration: 7000,
-        },
-      ],
-      onChapterExit: [],
-    },
-    {
-      id: "richardson",
-      alignment: "right",
-      hidden: true,
-      title: "Fort Richardson construction",
-      image: "data/images/fort-rich-soldiers.jpeg",
-      description: "",
-      location: {
-        center: [-149.66419, 61.25831],
-        zoom: 11.92,
-        pitch: 45.0,
-        bearing: 0.0,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        {
-          layer: "base",
-          opacity: 1,
-          duration: 7000,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "base",
-          opacity: 0,
-          duration: 7000,
-        },
-      ],
-    },
-    {
-      id: "richardson2",
-      alignment: "right",
-      hidden: false,
-      title: "Fort Richardson construction",
-      image: "data/images/fort-rich-soldiers.jpeg",
-      description:
-        "In 1940-41, the US military constructed Fort Richardson and Elmendorf Air Force Base, two major military bases deemed necessary due to the Pacific threat from Japan, particularly attacks on Alaska’s Aleutian Islands. The bases brought thousands of soldiers and construction workers to Anchorage — many of whom brought families — prompting the need for new groceries, schools, teachers, and workers in general. As a result, the population of Anchorage tripled from 1939-1942, growing from 4,000 to 12,000, and exploded to over 44,000 by 1960.",
-      location: {
-        center: [-149.66419, 61.25831],
-        zoom: 11.92,
+        center: [-149.86665, 61.19647],
+        zoom: 11.91,
         pitch: 45.0,
         bearing: 0.0,
       },
@@ -192,16 +141,48 @@ var config = {
       onChapterExit: [],
     },
     {
-      id: "boom",
-      alignment: "left",
-      hidden: true,
-      title: "Population Boom",
-      image: "data/images/4thAve1949.jpg",
+      id: "richardson",
+      alignment: "right",
+      hidden: false,
+      title: "A Military Town",
+      image: "data/images/fort-rich-soldiers.jpeg",
       description:
-        "A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had no chance whatsoever at securing a stable, long-term home, and were forced instead to find short-term shelter by any means necessary. Privies, shacks, and yes, tents, were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.",
+        "In 1940-41, the US military constructed Fort Richardson and Elmendorf Air Force Base, two major military bases deemed necessary due to the Pacific threat from Japan, particularly attacks on Alaska’s Aleutian Islands. The bases brought thousands of soldiers and construction workers to Anchorage — many of whom brought families — prompting the need for new groceries, schools, teachers, and workers in general. As a result, the population of Anchorage tripled from 1939-1942, growing from 4,000 to 12,000, and exploded to over 44,000 by 1960.",
       location: {
-        center: [-149.87969, 61.15596],
-        zoom: 10.8,
+        center: [-149.54317, 61.20236],
+        zoom: 10.3,
+        pitch: 45.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "base",
+          opacity: 0.4,
+          duration: 5000,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "base",
+          opacity: 0,
+          duration: 1000,
+        },
+      ],
+    },
+    {
+      id: "boom",
+      alignment: "right",
+      hidden: false,
+      title: "Residential Buildings - 1941-1960",
+      //image: "data/images/4thAve1949.jpg",
+      //description:
+      // "A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had no chance whatsoever at securing a stable, long-term home, and were forced instead to find short-term shelter by any means necessary. Privies, shacks, and yes, tents, were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.",
+      location: {
+        center: [-149.88577, 61.1654],
+        zoom: 10.07,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -224,10 +205,10 @@ var config = {
       title: "A Severe Housing Shortage",
       image: "data/images/4thAve1949.jpg",
       description:
-        "A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had no chance whatsoever at securing a stable, long-term home, and were forced instead to find short-term shelter by any means necessary. <br><br><img src='data/images/alleyshack48.jpg' alt='source: Alaska State Library Archives'><br>Privies, shacks, and yes, tents, were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.<p><img src='data/images/10thandG48.jpg' alt='source: Alaska State Library Archives'>",
+        "A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had no chance whatsoever at securing a stable, long-term home, and were forced instead to find short-term shelter by any means necessary. <br><figure><img src='data/images/alleyshack48.jpg' alt='source: Alaska State Library Archives'/><figcaption>An alleyshack in downtown Anchorage, 1948</figcaption></figure>Privies, shacks, and yes, tents, were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.<p><img src='data/images/10thandG48.jpg' alt='source: Alaska State Library Archives'>",
       location: {
-        center: [-149.87969, 61.15596],
-        zoom: 10.8,
+        center: [-149.88577, 61.1654],
+        zoom: 10.07,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -318,6 +299,32 @@ var config = {
       onChapterExit: [],
     },
     {
+      id: "earthquake2",
+      alignment: "right",
+      hidden: false,
+      title: "Residential Buildings - 1961-1969",
+      //image: "data/images/earthquake.jpg",
+      //description:
+      // "Growth continued steadily through Alaska’s achievement of statehood in 1959 and into the 1960s before an earthquake brought the city to a sudden, devastating halt in April, 1964. The second largest earthquake in recorded global history, it caused $300 million in property damage and killed 115 people. The quake changed the trajectory of the 1960s, with the remainder of the decade dominated by repairs, rebuilds, and the restoration of normalcy to city life.<p>Meanwhile, another boom loomed around the corner. While Alaska rebuilt, oil companies lobbied in Juneau and Washington DC and laid the seeds to greatly expand their Alaskan production.",
+      location: {
+        center: [-149.88577, 61.1654],
+        zoom: 10.07,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "anch61-69",
+          opacity: 1,
+          duration: 1000,
+        },
+      ],
+      onChapterExit: [],
+    },
+    {
       id: "oilyears",
       alignment: "right",
       hidden: false,
@@ -371,7 +378,7 @@ var config = {
     },
     {
       id: "oilyears2",
-      alignment: "right",
+      alignment: "fully",
       hidden: false,
       //title: "Oil Years: Construction",
       image: "data/images/BPbldg.jpg",
