@@ -205,7 +205,7 @@ var config = {
       title: "A Severe Housing Shortage",
       image: "data/images/4thAve1949.jpg",
       description:
-        "A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had no chance whatsoever at securing a stable, long-term home, and were forced instead to find short-term shelter by any means necessary. <br><figure><img src='data/images/alleyshack48.jpg' alt='source: Alaska State Library Archives'/><figcaption>An alleyshack in downtown Anchorage, 1948</figcaption></figure>Privies, shacks, and yes, tents, were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.<p><img src='data/images/10thandG48.jpg' alt='source: Alaska State Library Archives'>",
+        "A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had little chance at securing a long-term home and were forced instead to find short-term shelter by any means necessary. <br><figure><img src='data/images/alleyshack48.jpg' alt='source: Alaska State Library Archives'/><figcaption>An alleyshack in downtown Anchorage, 1948</figcaption></figure>Privies, shacks, and tents were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.<p><img src='data/images/10thandG48.jpg' alt='source: Alaska State Library Archives'>",
       location: {
         center: [-149.88577, 61.1654],
         zoom: 10.07,
@@ -424,10 +424,10 @@ var config = {
     },
     {
       id: "90s2000s",
-      alignment: "left",
+      alignment: "fully",
       hidden: false,
       title: "1990-2003: The Final Years of Building Growth",
-      image: "data/images/westchester80s",
+      image: "data/images/westchester80s.jpg",
       description:
         "After the oil boom, Anchorage settled into its stature as a newly significant US city. It continued building and developing its own culture as neighborhoods filled out and life evolved with the times.",
       location: {
@@ -446,7 +446,7 @@ var config = {
           duration: 7000,
         },
         {
-          layer: "anch2000-2008",
+          layer: "anch2000-08",
           opacity: 1,
           duration: 7000,
         },
@@ -455,12 +455,12 @@ var config = {
     },
     {
       id: "just2000s",
-      alignment: "left",
+      alignment: "center",
       hidden: false,
       //title: "1990-2003: The Final Years of Building Growth",
-      image: "data/images/.jpg",
+      image: "data/images/resigraph.png",
       description:
-        "With its population still growing — it didn’t peak until 2016 — Anchorage’s residential construction began decreasing in 2003. *chart*",
+        "With its population still growing — it didn’t peak until 2016 — Anchorage’s residential construction began decreasing in 2003 and has continued decreasing since.",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
