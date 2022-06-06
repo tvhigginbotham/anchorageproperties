@@ -11,8 +11,8 @@ var config = {
   inset: false,
   theme: "light",
   use3dTerrain: false, //set true for enabling 3D maps.
-  title: "Building out of a Crisis",
-  subtitle: "A Housing History of Anchorage",
+  title: "Building out of Crisis",
+  subtitle: "A Housing History of Anchorage, Alaska",
   byline: "By Tim Higginbotham",
   footer:
     'Data sources: Municipality of Anchorage Open Data Portal, State of Alaska Department of Natural Resources <br> Research sources: David Reamer, TK <br> Coding source: <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a>.',
@@ -24,7 +24,7 @@ var config = {
       title: "Introduction",
       image: "data/images/IMG_9547.JPG",
       description:
-        "In the century since it was founded as a small tent city to serve as the Alaska Railroad Headquarters in 1914, Anchorage has grown to become Alaska’s largest city and an international transport hub — but not without growing pains. Following a major post-World War II population expansion, Anchorage faced a severe housing shortage, forcing newcomers to pay outlandish prices for low-quality short-term housing in the hopes of someday finding a long-term home. Through decades of building, the city eventually reached something close to a stable housing market.<p>But in recent years, building has slowed to a crawl, creating another serious housing shortage. The city’s growth has stagnated — the population is declining for the first time ever and the rate of building can’t meet the current population’s demands. Vacancy rates in rental units are dropping fast, houses put up for sale are selling in a matter of days with their prices driven up by bidding wars, forcing out locals in the rental and buying markets alike. <p> Anchorage built its way out of past crises, and it needs to do the same again. This crisis is different — caused by decline and stagnation rather than rapid growth — but the solution is the same.",
+        "In the century since it was founded as a small tent city to serve as the Alaska Railroad Headquarters in 1914, Anchorage has grown to become Alaska’s largest city and an international transport hub — but not without growing pains. Following a major post-World War II population expansion, Anchorage faced a severe housing shortage, forcing newcomers to pay outlandish prices for low-quality short-term housing in the hopes of someday finding a long-term home. Through decades of building, the city eventually reached something close to a stable housing market.<p>But in recent years, building has slowed to a crawl, creating another serious housing shortage. The city’s growth has stagnated — the population is declining for the first time ever and the rate of building can’t meet the current population’s demands. Vacancy rates in rental units are dropping fast and houses put up for sale are selling in a matter of days with their prices driven up by bidding wars, forcing out locals in the rental and buying markets alike. <p> Anchorage built its way out of past crises, and it needs to do the same again. This crisis is different — caused by stagnation rather than rapid growth — but the solution is the same.",
       location: {
         center: [-149.88577, 61.1654],
         zoom: 10.07,
@@ -39,7 +39,7 @@ var config = {
     },
     {
       id: "tentcity",
-      alignment: "right",
+      alignment: "center",
       hidden: false,
       title: "Tent City",
       image: "data/images/tentcity.jpg",
@@ -58,25 +58,70 @@ var config = {
         //curve: 1, // change the speed at which it zooms out
       },
       mapAnimation: "flyTo",
-      rotateAnimation: true,
+      rotateAnimation: false,
       callback: "",
-      onChapterEnter: [
+      onChapterEnter: [],
+      onChapterExit: [
         {
           layer: "anch1925",
           opacity: 1,
-          duration: 7000,
+          duration: 200,
         },
       ],
+    },
+    {
+      id: "tentcity2",
+      alignment: "right",
+      hidden: false,
+      title: "Residential Buildings - 1914-1925",
+      //image: "data/images/tentcity.jpg",
+      //description:
+      location: {
+        center: [-149.885, 61.212],
+        zoom: 13.2,
+        pitch: 45.0,
+        bearing: 0.0,
+        // flyTo additional controls-
+        // These options control the flight curve, making it move
+        // slowly and zoom out almost completely before starting
+        // to pan.
+        //speed: 2, // make the flying slow
+        //curve: 1, // change the speed at which it zooms out
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: true,
+      callback: "",
+      onChapterEnter: [],
       onChapterExit: [],
     },
     {
       id: "railhub",
-      alignment: "left",
+      alignment: "center",
       hidden: false,
       title: "Railroad Hub",
       image: "data/images/4thAve1920s.jpg",
       description:
-        "The 20s and 30s brought Anchorage slow, steady growth, allowing it to settle into its newfound stature as a civilian town in its own right. By 1939, the population stood at 4,000, centered mainly around its original downtown grid site near Ship Creek. Roads were paved, theaters and restaurants opened, and safe, long-term housing built.",
+        "The 20s and 30s brought Anchorage slow, steady growth, allowing it to settle into its newfound stature as a civilian town in its own right. By 1939, the population reached 4,000, centered mainly around its original downtown grid site near Ship Creek. Roads were paved, theaters and restaurants opened, and safe, long-term housing built.",
+      location: {
+        center: [-149.89716, 61.21848],
+        zoom: 12,
+        pitch: 20.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [],
+      onChapterExit: [],
+    },
+    {
+      id: "railhub2",
+      alignment: "left",
+      hidden: false,
+      title: "Residential Buildings - 1914-1940",
+      //image: "data/images/4thAve1920s.jpg",
+      //description:
+      //"The 20s and 30s brought Anchorage slow, steady growth, allowing it to settle into its newfound stature as a civilian town in its own right. By 1939, the population stood at 4,000, centered mainly around its original downtown grid site near Ship Creek. Roads were paved, theaters and restaurants opened, and safe, long-term housing built.",
       location: {
         center: [-149.89716, 61.21848],
         zoom: 12,
@@ -111,16 +156,20 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
-      //onChapterEnter: [{
-      //  layer: "richardson1950",
-      //  opacity: 1,
-      //  duration: 7000,
-      // },],
-      //onChapterExit: [{
-      // layer: "richardson1950",
-      // opacity: 0,
-      // duration: 7000,
-      // },],
+      onChapterEnter: [
+        {
+          layer: "base",
+          opacity: 1,
+          duration: 7000,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "base",
+          opacity: 0,
+          duration: 7000,
+        },
+      ],
     },
     {
       id: "richardson2",
