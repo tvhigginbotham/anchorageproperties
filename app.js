@@ -383,7 +383,7 @@ var config = {
       //title: "Oil Years: Construction",
       image: "data/images/BPbldg.jpg",
       description:
-        "From 1970-79, Anchorage's population grew from 48,000 to 174,000. And as oil production continued, Anchorage continued to build. Many pipeline workers settled permanently in Anchorage, living there for half of their 'two weeks on, two weeks off' schedules. The state treasury pumped a billion dollars of North Slope oil revenue into Anchorage construction in the ‘80s, with residential construction reaching its all-time peak in 1983. From 1980-1989, the city’s population grew from 174,000-226,000.",
+        "From 1970-79, Anchorage's population grew from 48,000 to 174,000. And as oil production continued, Anchorage continued to build. Many pipeline workers settled permanently in Anchorage, living there for half of their 'two weeks on, two weeks off' schedules.<p>The state treasury pumped a billion dollars of North Slope oil revenue into Anchorage construction in the ‘80s, with residential construction reaching its all-time peak in 1983. <p>From 1980-1989, the city’s population grew from 174,000-226,000.",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
@@ -399,11 +399,11 @@ var config = {
     {
       id: "oilyears3",
       alignment: "right",
-      hidden: true,
-      //title: "Third Title",
-      image: "data/images/downtown80s.jpg",
-      description:
-        "oil production reaches all time peak in 1983, soon followed by all-time peak in residential construction. pop grows from 174k-226k.",
+      hidden: false,
+      title: "Residential Buildings - 1980-1989",
+      //image: "data/images/downtown80s.jpg",
+      //description:
+      //"oil production reaches all time peak in 1983, soon followed by all-time peak in residential construction. pop grows from 174k-226k.",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
@@ -439,6 +439,26 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
+      onChapterEnter: [{}, {}],
+      onChapterExit: [],
+    },
+    {
+      id: "90s2000s2",
+      alignment: "right",
+      hidden: false,
+      title: "Residential buildings - 1990-2008",
+      //image: "data/images/westchester80s.jpg",
+      //description:
+      // "After the oil boom, Anchorage settled into its stature as a newly significant US city. It continued building and developing its own culture as neighborhoods filled out and life evolved with the times.",
+      location: {
+        center: [-149.87969, 61.15596],
+        zoom: 10.8,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
       onChapterEnter: [
         {
           layer: "anch90-99",
@@ -460,7 +480,7 @@ var config = {
       //title: "1990-2003: The Final Years of Building Growth",
       image: "data/images/resigraph.png",
       description:
-        "With its population still growing — it didn’t peak until 2016 — Anchorage’s residential construction began decreasing in 2003 and has continued decreasing since.",
+        "Anchorage’s residential construction reached its final year of growth in 2003. Fewer residences have been built each year since.",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
@@ -471,6 +491,32 @@ var config = {
       rotateAnimation: false,
       callback: "",
       onChapterEnter: [],
+      onChapterExit: [],
+    },
+    {
+      id: "2009-now2",
+      alignment: "right",
+      hidden: false,
+      title: "Residential buildings - 2009-2019",
+      //image: "data/images/IMG_9565.jpg",
+      //description:
+      //  "In recent years it has reached a point of crisis — an unfamiliar crisis for a city whose shortages have historically come during booms rather than periods of decline. From 2018 to 2019, home prices increased ____. From 2019-2020, they increased ____. From 2020-2021, ____. Meanwhile, rents have increased from ___ to ____ in that span. A shortage of units, stagnated construction, a diminished amount of buildable land, and an overall surge in the national housing market have made the city worse for buyers and renters than ever before. Bidding wars drive home sales well over asking price. Homes stay on the market for an average of _ days. Landlords hike rents regularly, forcing longterm Anchorage residents out of their homes.<p>Vacancy rates in apartments dropped in 2021 from 9.2% to 4.3%. A recent U.S. Census Bureau Household Pulse Survey found that more than 30% of Alaskan adults live in homes that are not current on rent or mortgages, where eviction is likely in the next two months. And between January and November 2021, more than 15,000 Alaskans accessed homeless services.<p>In short, people in Anchorage are challenged to find a place to live. And when they can, they can seldom afford it. While this housing shortage doesn’t share a cause with Anchorage’s 20th century shortages, its does share a solution: in order to house its population and encourage a return to growth and prosperity, Anchorage must build.",
+      location: {
+        center: [-149.87969, 61.15596],
+        zoom: 10.8,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "anch2009-19",
+          opacity: 1,
+          duration: 1000,
+        },
+      ],
       onChapterExit: [],
     },
     {
@@ -490,13 +536,27 @@ var config = {
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
-      onChapterEnter: [
-        {
-          layer: "anch2009-19",
-          opacity: 1,
-          duration: 7000,
-        },
-      ],
+      onChapterEnter: [{}],
+      onChapterExit: [],
+    },
+    {
+      id: "end",
+      alignment: "fully",
+      hidden: true,
+      title: "A New Housing Crisis",
+      image: "data/images/IMG_9565.jpg",
+      description:
+        "In recent years it has reached a point of crisis — an unfamiliar crisis for a city whose shortages have historically come during booms rather than periods of decline. From 2018 to 2019, home prices increased ____. From 2019-2020, they increased ____. From 2020-2021, ____. Meanwhile, rents have increased from ___ to ____ in that span. A shortage of units, stagnated construction, a diminished amount of buildable land, and an overall surge in the national housing market have made the city worse for buyers and renters than ever before. Bidding wars drive home sales well over asking price. Homes stay on the market for an average of _ days. Landlords hike rents regularly, forcing longterm Anchorage residents out of their homes.<p>Vacancy rates in apartments dropped in 2021 from 9.2% to 4.3%. A recent U.S. Census Bureau Household Pulse Survey found that more than 30% of Alaskan adults live in homes that are not current on rent or mortgages, where eviction is likely in the next two months. And between January and November 2021, more than 15,000 Alaskans accessed homeless services.<p>In short, people in Anchorage are challenged to find a place to live. And when they can, they can seldom afford it. While this housing shortage doesn’t share a cause with Anchorage’s 20th century shortages, its does share a solution: in order to house its population and encourage a return to growth and prosperity, Anchorage must build.",
+      location: {
+        center: [-149.87969, 61.15596],
+        zoom: 10.8,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [{}],
       onChapterExit: [],
     },
   ],
