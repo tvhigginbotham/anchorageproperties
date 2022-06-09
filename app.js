@@ -64,7 +64,7 @@ var config = {
       onChapterExit: [
         {
           layer: "anch1925",
-          opacity: 1,
+          opacity: 0.7,
           duration: 400,
         },
       ],
@@ -116,7 +116,7 @@ var config = {
       onChapterExit: [
         {
           layer: "anch26-40",
-          opacity: 1,
+          opacity: 0.7,
           duration: 1000,
         },
       ],
@@ -180,7 +180,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "base",
-          opacity: 0.4,
+          opacity: 0.35,
           duration: 5000,
         },
       ],
@@ -212,7 +212,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "anch41-60",
-          opacity: 1,
+          opacity: 0.7,
           duration: 7000,
         },
       ],
@@ -358,7 +358,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "anch61-69",
-          opacity: 1,
+          opacity: 0.7,
           duration: 1000,
         },
       ],
@@ -447,7 +447,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "anch70-79",
-          opacity: 1,
+          opacity: 0.7,
           duration: 7000,
         },
       ],
@@ -493,7 +493,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "anch80-89",
-          opacity: 1,
+          opacity: 0.7,
           duration: 7000,
         },
       ],
@@ -539,12 +539,12 @@ var config = {
       onChapterEnter: [
         {
           layer: "anch90-99",
-          opacity: 1,
+          opacity: 0.7,
           duration: 7000,
         },
         {
           layer: "anch2000-08",
-          opacity: 1,
+          opacity: 0.7,
           duration: 7000,
         },
       ],
@@ -590,7 +590,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "anch2009-19",
-          opacity: 1,
+          opacity: 0.7,
           duration: 1000,
         },
       ],
