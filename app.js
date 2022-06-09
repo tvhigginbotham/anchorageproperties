@@ -73,9 +73,10 @@ var config = {
       id: "tentcity2",
       alignment: "right",
       hidden: false,
-      title: "Residential Buildings - 1914-1925",
+      //title: "Residential Buildings - 1914-1925",
       //image: "data/images/tentcity.jpg",
-      //description:
+      description:
+        "<ul><li>Residential buildings: 1914-1925<li>Building count: 72</ul>",
       location: {
         center: [-149.885, 61.212],
         zoom: 13.2,
@@ -124,10 +125,29 @@ var config = {
       id: "railhub2",
       alignment: "right",
       hidden: false,
-      title: "Residential Buildings - 1914-1940",
+      //title:,
       //image: "data/images/4thAve1920s.jpg",
-      //description:
-      //"The 20s and 30s brought Anchorage slow, steady growth, allowing it to settle into its newfound stature as a civilian town in its own right. By 1939, the population stood at 4,000, centered mainly around its original downtown grid site near Ship Creek. Roads were paved, theaters and restaurants opened, and safe, long-term housing built.",
+      description:
+        "<ul><li>Residential buildings: 1926-1940<li>Building count: 618</ul>",
+      location: {
+        center: [-149.86665, 61.19647],
+        zoom: 11.91,
+        pitch: 45.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [],
+      onChapterExit: [],
+    },
+    {
+      id: "space2",
+      alignment: "right",
+      hidden: true,
+      //title:,
+      //image:,
+      // description:,
       location: {
         center: [-149.86665, 61.19647],
         zoom: 11.91,
@@ -196,6 +216,26 @@ var config = {
           duration: 7000,
         },
       ],
+      onChapterExit: [],
+    },
+    {
+      id: "space3",
+      alignment: "right",
+      hidden: true,
+      //title:,
+      //image: "data/images/4thAve1949.jpg",
+      //description:
+      // "A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had no chance whatsoever at securing a stable, long-term home, and were forced instead to find short-term shelter by any means necessary. Privies, shacks, and yes, tents, were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.",
+      location: {
+        center: [-149.88577, 61.1654],
+        zoom: 10.07,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [],
       onChapterExit: [],
     },
     {
@@ -325,6 +365,25 @@ var config = {
       onChapterExit: [],
     },
     {
+      id: "space4",
+      alignment: "right",
+      hidden: true,
+      //title: ,
+      //image: ,
+      //description:
+      location: {
+        center: [-149.88577, 61.1654],
+        zoom: 10.07,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [],
+      onChapterExit: [],
+    },
+    {
       id: "oilyears",
       alignment: "right",
       hidden: false,
@@ -351,13 +410,31 @@ var config = {
       onChapterExit: [],
     },
     {
-      //id: "oilyears2",
-      //alignment: "right",
+      id: "space5",
+      alignment: "right",
       hidden: true,
       //title: "Oil Years: Construction",
       //image: "data/images/pipelineworkers.jpg",
-      //description:
-      // "Workers 2 weeks on 2 weeks off, families, many stay permanently",
+      //description:,
+      location: {
+        center: [-149.87969, 61.15596],
+        zoom: 10.8,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      //mapAnimation: "flyTo",
+      //rotateAnimation: false,
+      //callback: "",
+      onChapterEnter: [],
+      onChapterExit: [],
+    },
+    {
+      id: "oilyears2",
+      alignment: "right",
+      hidden: false,
+      //title: "Oil Years: Construction",
+      //image: "data/images/pipelineworkers.jpg",
+      description: "Residential Buildings, 1970-79",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
@@ -377,7 +454,7 @@ var config = {
       onChapterExit: [],
     },
     {
-      id: "oilyears2",
+      id: "oilyears3",
       alignment: "fully",
       hidden: false,
       //title: "Oil Years: Construction",
@@ -397,7 +474,7 @@ var config = {
       onChapterExit: [],
     },
     {
-      id: "oilyears3",
+      id: "oilyears4",
       alignment: "right",
       hidden: false,
       title: "Residential Buildings - 1980-1989",
