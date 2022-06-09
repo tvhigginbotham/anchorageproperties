@@ -44,7 +44,7 @@ var config = {
       title: "Tent City",
       image: "data/images/tentcity.jpg",
       description:
-        "Anchorage was founded as a small tent city to headquarter the Alaska Railroad in 1914. Populated almost entirely by railroad and construction workers, it operated as a company town in its first years. By 1920, as many as 2,000 people lived in tents and makeshift shelters with up to 100 more arriving each week. Sanitation conditions were poor, prompting the urgent need to quickly build adequate housing.",
+        "Anchorage was founded as a small tent city to headquarter the Alaska Railroad in 1914. Populated almost entirely by railroad and construction workers, it operated as a company town in its first years. By 1920, as many as 2,000 people lived in tents and makeshift shelters with up to 100 more arriving each week. Sanitation conditions were poor, prompting the urgent need to build adequate housing.",
       location: {
         center: [-149.885, 61.212],
         zoom: 13.2,
@@ -406,6 +406,26 @@ var config = {
           opacity: 0.8,
           duration: 7000,
         },
+        {
+          layer: "anch1925",
+          opacity: 0,
+          duration: 100,
+        },
+        {
+          layer: "anch26-40",
+          opacity: 0,
+          duration: 100,
+        },
+        {
+          layer: "anch41-60",
+          opacity: 0,
+          duration: 100,
+        },
+        {
+          layer: "anch61-69",
+          opacity: 0,
+          duration: 100,
+        },
       ],
       onChapterExit: [],
     },
@@ -425,7 +445,28 @@ var config = {
       //mapAnimation: "flyTo",
       //rotateAnimation: false,
       //callback: "",
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "anch1925",
+          opacity: 0.8,
+          duration: 100,
+        },
+        {
+          layer: "anch26-40",
+          opacity: 0.8,
+          duration: 100,
+        },
+        {
+          layer: "anch41-60",
+          opacity: 0.8,
+          duration: 100,
+        },
+        {
+          layer: "anch61-69",
+          opacity: 0.8,
+          duration: 100,
+        },
+      ],
       onChapterExit: [],
     },
     {
@@ -434,7 +475,7 @@ var config = {
       hidden: false,
       //title: "Oil Years: Construction",
       //image: "data/images/pipelineworkers.jpg",
-      description: "Residential Buildings, 1970-79",
+      description: "Residential Buildings, 1970-89",
       location: {
         center: [-149.87969, 61.15596],
         zoom: 10.8,
@@ -448,7 +489,12 @@ var config = {
         {
           layer: "anch70-79",
           opacity: 0.7,
-          duration: 7000,
+          duration: 1500,
+        },
+        {
+          layer: "anch80-89",
+          opacity: 0.7,
+          duration: 1500,
         },
       ],
       onChapterExit: [],
@@ -471,32 +517,6 @@ var config = {
       rotateAnimation: false,
       callback: "",
       onChapterEnter: [],
-      onChapterExit: [],
-    },
-    {
-      id: "oilyears4",
-      alignment: "right",
-      hidden: false,
-      title: "Residential Buildings - 1980-1989",
-      //image: "data/images/downtown80s.jpg",
-      //description:
-      //"oil production reaches all time peak in 1983, soon followed by all-time peak in residential construction. pop grows from 174k-226k.",
-      location: {
-        center: [-149.87969, 61.15596],
-        zoom: 10.8,
-        pitch: 0.0,
-        bearing: 0.0,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        {
-          layer: "anch80-89",
-          opacity: 0.7,
-          duration: 7000,
-        },
-      ],
       onChapterExit: [],
     },
     {
