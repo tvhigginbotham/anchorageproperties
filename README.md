@@ -8,6 +8,8 @@
 
 This visualizes building over time in Anchorage, Alaska, from its origins as a small tent settlement to Alaska's largest city. Following a major post-World War II population expansion, Anchorage faced a severe housing shortage, forcing newcomers to pay outlandish prices for low-quality short-term housing in the hopes of someday finding a longterm home. Today, after decades of continued growth, building has slowed to a crawl, creating another serious housing shortage. From 1950-1990, Anchorage was urgently building to house a growing population. But now, the city has stagnated, the population is declining for the first time, and the rate of building can't meet the current population's demands. Houses put up for sale are selling in 3 days, the prices driven well over asking in bidding wars, deterring newcomers and forcing out locals.
 
+![resigraph](data/images/resigraph.png?raw=true "graph showing decline in residential construction")
+
 ### 2. Methodology
 
 **A) Data**

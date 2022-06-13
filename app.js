@@ -307,15 +307,19 @@ var config = {
       description:
         "Developers erected major neighborhoods like *****, Nunaka Valley, and ****** (highlight on map), while other neighborhoods were built by residents pooling their resources, like Pilot’s Row on the eastern side of downtown.Businesses, needing housing for employees, became major developers themselves. Pan America Hotel (???) — now Pioneer Home Senior Housing — was built by Pan America as a hotel for employees and passengers. The Civil Aeronautics Administration built the Safehaven apartment complex to house employees in 1942. Northwest Airlines built a neighborhood of ranch homes on 10th Avenue and C Street to house its workers.",
       location: {
-        center: [-149.82151, 61.20337],
-        zoom: 14.46,
-        pitch: 45.0,
-        bearing: -24.0,
+        center: [-149.88577, 61.1654],
+        zoom: 10.1,
+        pitch: 0.0,
+        bearing: 0.0,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
-      onChapterEnter: [],
+      onChapterEnter: [
+        layer: "neighborhoods",
+          opacity: 0.35,
+          duration: 1000,
+      ],
       onChapterExit: [],
     },
     {
@@ -641,7 +645,7 @@ var config = {
       alignment: "fully",
       hidden: true,
       title: "A New Housing Crisis",
-      image: "data/images/IMG_9565.jpg",
+      //image: "data/images/IMG_9565.jpg",
       description:
         "In recent years it has reached a point of crisis — an unfamiliar crisis for a city whose shortages have historically come during booms rather than periods of decline. From 2018 to 2019, home prices increased ____. From 2019-2020, they increased ____. From 2020-2021, ____. Meanwhile, rents have increased from ___ to ____ in that span. A shortage of units, stagnated construction, a diminished amount of buildable land, and an overall surge in the national housing market have made the city worse for buyers and renters than ever before. Bidding wars drive home sales well over asking price. Homes stay on the market for an average of _ days. Landlords hike rents regularly, forcing longterm Anchorage residents out of their homes.<p>Vacancy rates in apartments dropped in 2021 from 9.2% to 4.3%. A recent U.S. Census Bureau Household Pulse Survey found that more than 30% of Alaskan adults live in homes that are not current on rent or mortgages, where eviction is likely in the next two months. And between January and November 2021, more than 15,000 Alaskans accessed homeless services.<p>In short, people in Anchorage are challenged to find a place to live. And when they can, they can seldom afford it. While this housing shortage doesn’t share a cause with Anchorage’s 20th century shortages, its does share a solution: in order to house its population and encourage a return to growth and prosperity, Anchorage must build.",
       location: {
