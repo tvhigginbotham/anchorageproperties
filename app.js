@@ -44,7 +44,7 @@ var config = {
       title: "Tent City",
       image: "data/images/tentcity.jpg",
       description:
-        "Anchorage was founded as a small tent city to headquarter the Alaska Railroad in 1914. Populated almost entirely by railroad and construction workers, it operated as a company town in its first years. By 1920, as many as 2,000 people lived in tents and makeshift shelters with up to 100 more arriving each week. Sanitation conditions were poor, prompting the urgent need to build adequate housing.",
+        "Anchorage was founded along the mouth of Ship Creek in 1914 as a small tent city to headquarter the Alaska Railroad. Populated almost entirely by railroad and construction workers, it operated as a company town in its first years. By 1920, as many as 2,000 people lived in tents and makeshift shelters with up to 100 more arriving each week. Sanitation conditions were poor, prompting the urgent need to build adequate housing.",
       location: {
         center: [-149.885, 61.212],
         zoom: 13.2,
@@ -96,6 +96,31 @@ var config = {
       onChapterExit: [],
     },
     {
+      id: "hidden101",
+      alignment: "right",
+      hidden: true,
+      //title: "Residential Buildings - 1914-1925",
+      //image: "data/images/tentcity.jpg",
+      //description:
+      location: {
+        center: [-149.885, 61.212],
+        zoom: 13.2,
+        pitch: 45.0,
+        bearing: 0.0,
+        // flyTo additional controls-
+        // These options control the flight curve, making it move
+        // slowly and zoom out almost completely before starting
+        // to pan.
+        //speed: 2, // make the flying slow
+        //curve: 1, // change the speed at which it zooms out
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [],
+      onChapterExit: [],
+    },
+    {
       id: "railhub",
       alignment: "center",
       hidden: false,
@@ -105,7 +130,7 @@ var config = {
         "The 20s and 30s brought Anchorage slow, steady growth as it became a civilian town in its own right. By 1939, the population reached 4,000, centered mainly around its original downtown grid site near Ship Creek. Roads were paved, theaters and restaurants opened, and safe, long-term housing built.",
       location: {
         center: [-149.86665, 61.19647],
-        zoom: 11.91,
+        zoom: 11.4,
         pitch: 45.0,
         bearing: 0.0,
       },
@@ -131,7 +156,7 @@ var config = {
         "<ul><li>Residential buildings: 1926-1940<li>Building count: 618</ul>",
       location: {
         center: [-149.86665, 61.19647],
-        zoom: 11.91,
+        zoom: 11.4,
         pitch: 45.0,
         bearing: 0.0,
       },
@@ -150,7 +175,7 @@ var config = {
       // description:,
       location: {
         center: [-149.86665, 61.19647],
-        zoom: 11.91,
+        zoom: 11.4,
         pitch: 45.0,
         bearing: 0.0,
       },
@@ -170,7 +195,7 @@ var config = {
         "In 1940-41, the US military constructed Fort Richardson and Elmendorf Air Force Base, two major military bases deemed necessary due to the Pacific threat from Japan, particularly attacks on Alaska’s Aleutian Islands. The bases brought thousands of soldiers and construction workers to Anchorage — many of whom brought families — prompting the need for new groceries, schools, teachers, and workers in general. As a result, the population of Anchorage tripled from 1939-1942, growing from 4,000 to 12,000, and exploded to over 44,000 by 1960.",
       location: {
         center: [-149.54317, 61.20236],
-        zoom: 10.3,
+        zoom: 9.9,
         pitch: 45.0,
         bearing: 0.0,
       },
@@ -196,14 +221,15 @@ var config = {
       id: "boom",
       alignment: "right",
       hidden: false,
-      title: "Residential Buildings - 1941-1960",
+      title:
+        "<ul><li>Residential buildings: 1941-1959<li>Building count: 5300</ul>",
       //image: "data/images/4thAve1949.jpg",
       //description:
       // "A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had no chance whatsoever at securing a stable, long-term home, and were forced instead to find short-term shelter by any means necessary. Privies, shacks, and yes, tents, were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
-        pitch: 0.0,
+        center: [-149.71867, 61.16397],
+        zoom: 10.01,
+        pitch: 10.0,
         bearing: 0.0,
       },
       mapAnimation: "flyTo",
@@ -227,9 +253,9 @@ var config = {
       //description:
       // "A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had no chance whatsoever at securing a stable, long-term home, and were forced instead to find short-term shelter by any means necessary. Privies, shacks, and yes, tents, were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
-        pitch: 0.0,
+        center: [-149.71867, 61.16397],
+        zoom: 10.01,
+        pitch: 10.0,
         bearing: 0.0,
       },
       mapAnimation: "flyTo",
@@ -243,13 +269,13 @@ var config = {
       alignment: "fully",
       hidden: false,
       title: "A Severe Housing Shortage",
-      image: "data/images/4thAve1949.jpg",
+      //image: "data/images/4thAve1949.jpg",
       description:
-        "A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had little chance at securing a long-term home and were forced instead to find short-term shelter by any means necessary. <br><figure><img src='data/images/alleyshack48.jpg' alt='source: Alaska State Library Archives'/><figcaption>An alleyshack in downtown Anchorage, 1948</figcaption></figure>Privies, shacks, and tents were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.<p><img src='data/images/10thandG48.jpg' alt='source: Alaska State Library Archives'>",
+        "<figure><img src='data/images/4thAve1949.jpg' alt='source: Alaska State Library Archives'/><figcaption></figcaption></figure>A town built for 4,000 cannot accommodate 40,000 newcomers. Those arriving had little chance at securing a long-term home and were forced instead to find short-term shelter by any means necessary. <br><figure><img src='data/images/alleyshack48.jpg' alt='source: Alaska State Library Archives'/><figcaption>This alleyshack in downtown Anchorage housed six occupants. 1948.</figcaption></figure>Privies, shacks, and tents were quickly constructed on private lots with exorbitant rents. Opportunistic landlords converted driveways and yards into campsites.<p>A cot in a room shared with 20 other people with no bath on site was documented as having a rate of $7 per night ($70 in today’s dollars). This densely populated campsite with a single shared outhouse on 13th Ave and C St rented small spaces to park a car or trailer for $50 per month (equivalent to $550 today).<p>The low quality and sanitation practices in these shelters accelerated the spread of disease and illness, particularly in children. Many of these new homes lacked sewage systems and garbage services. Houseflies carried illness from home to home. In 1946, 400 Anchorage families were homeless not due to lack of means, but to lack of housing options.<figure><img src='data/images/10thandG48.jpg' alt='source: Alaska State Library Archives'/><figcaption>Poor hygienic conditions in shacks and privies like these led to high rates of illness in children. 1948.</figcaption></figure>",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
-        pitch: 0.0,
+        center: [-149.71867, 61.16397],
+        zoom: 10.01,
+        pitch: 10.0,
         bearing: 0.0,
       },
       mapAnimation: "flyTo",
@@ -265,37 +291,23 @@ var config = {
       title: "Kit Homes and Quonset Huts",
       image: "data/images/airportheights.jpg",
       description:
-        "Unprepared for its status as a boomtown, Anchorage built itself out of crisis. With an overstretched construction industry and a shortage of labor and materials (exacerbated by postwar inflation), Anchorage residents and employers built as their means allowed. Kit homes — mail-order catalog homes shipped complete with building plans and parts — became a popular option. Many of these survive today, most notably in the Airport Heights neighborhood near Merrill Field (highlight on map). <p><img src='data/images/kit-home-ad.jpg' alt='source:'@>",
+        "Unprepared for its status as a boomtown, Anchorage built itself out of crisis. With an overstretched construction industry and a shortage of labor and materials (exacerbated by postwar inflation), Anchorage residents and employers built as their means allowed. Kit homes — mail-order catalog homes shipped complete with building plans and parts — became a popular option. Many of these survive today, most notably in the Airport Heights neighborhood near Merrill Field, pictured above and shown on the map. <figure><img src='data/images/kit-home-ad.jpg' alt='source: Creative Commons'/><figcaption>A catalogue ad showing the kind of mail-order home that still predominates some Anchorage neighborhoods today.</figcaption></figure>",
       location: {
-        center: [-149.82151, 61.20337],
-        zoom: 14.46,
+        center: [-149.80154, 61.20346],
+        zoom: 13.41,
         pitch: 45.0,
-        bearing: -24.0,
+        bearing: -15.2,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
-      onChapterEnter: [],
-      onChapterExit: [],
-    },
-    {
-      id: "Quonset",
-      alignment: "left",
-      hidden: false,
-      //title: "Any Means Necessary",
-      image: "data/images/railroad-workers-quonset.jpg",
-      description:
-        "Mobile home parks sprouted around the city, and surplus military quonset huts were transformed into homes as well as school rooms, grocery stores, and cafes. Many of these also remain in use today.<img src='data/images/spenardquonset.jpg' alt='source:'@>",
-      location: {
-        center: [-149.88755, 61.20977],
-        zoom: 15.45,
-        pitch: 45.0,
-        bearing: 0.0,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "neighborhoods",
+          opacity: 0.35,
+          duration: 1000,
+        },
+      ],
       onChapterExit: [],
     },
     {
@@ -303,30 +315,32 @@ var config = {
       alignment: "right",
       hidden: false,
       //title: "Kit Homes and Quonset huts",
-      image: "data/images/10th-and-C-nwairlines.jpg",
+      //image: "data/images/10th-and-C-nwairlines.jpg",
       description:
-        "Developers erected major neighborhoods like *****, Nunaka Valley, and ****** (highlight on map), while other neighborhoods were built by residents pooling their resources, like Pilot’s Row on the eastern side of downtown.Businesses, needing housing for employees, became major developers themselves. Pan America Hotel (???) — now Pioneer Home Senior Housing — was built by Pan America as a hotel for employees and passengers. The Civil Aeronautics Administration built the Safehaven apartment complex to house employees in 1942. Northwest Airlines built a neighborhood of ranch homes on 10th Avenue and C Street to house its workers.",
+        "<figure><img src='10th-and-C-nwairlines.jpg' alt='source: Alaska State Library Archives'/><figcaption> A South Addition neighborhood of single-family homes built by Northwest Airlines as employee housing. 1959.</figcaption></figure>Developers erected major neighborhoods like Nunaka Valley, Airport Heights, Roger's Park, Pilot's Row and Turnagain (highlighted on map). Businesses, needing housing for employees, became major developers themselves. The Civil Aeronautics Administration built the Safehaven apartment complex to house employees in 1942. Northwest Airlines built a neighborhood of ranch homes on 10th Avenue and C Street to house its workers, and the Alaska Railroad Company built a neighborhood of surplus military quonset huts.<figure><img src='data/images/railroad-workers-quonset.jpg' alt='source: Alaska State Library Archives'/><figcaption>A quonset hut neighborhood built as Alaska Railroad employee housing. 1960.</figcaption></figure>",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.1,
-        pitch: 0.0,
-        bearing: 0.0,
+        center: [-149.84932, 61.22917],
+        zoom: 11.12,
+        pitch: 10.0,
+        bearing: -90.4,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
-      onChapterEnter: [
-        layer: "neighborhoods",
-          opacity: 0.35,
+      onChapterEnter: [],
+      onChapterExit: [
+        {
+          layer: "neighborhoods",
+          opacity: 0,
           duration: 1000,
+        },
       ],
-      onChapterExit: [],
     },
     {
       id: "earthquake",
       alignment: "fully",
       hidden: false,
-      //title: "Third Title",
+      title: "Disaster and Recovery: the 1960s",
       image: "data/images/earthquake.jpg",
       description:
         "Growth continued steadily through Alaska’s achievement of statehood in 1959 and into the 1960s before an earthquake brought the city to a sudden, devastating halt in April, 1964. The second largest earthquake in recorded global history, it caused $300 million in property damage and killed 115 people. The quake changed the trajectory of the 1960s, with the remainder of the decade dominated by repairs, rebuilds, and the restoration of normalcy to city life.<p>Meanwhile, another boom loomed around the corner. While Alaska rebuilt, oil companies lobbied in Juneau and Washington DC and laid the seeds to greatly expand their Alaskan production.",
@@ -346,13 +360,14 @@ var config = {
       id: "earthquake2",
       alignment: "right",
       hidden: false,
-      title: "Residential Buildings - 1961-1969",
+      title:
+        "<ul><li>Residential buildings: 1961-1969<li>Building count: 7,913</ul>",
       //image: "data/images/earthquake.jpg",
       //description:
       // "Growth continued steadily through Alaska’s achievement of statehood in 1959 and into the 1960s before an earthquake brought the city to a sudden, devastating halt in April, 1964. The second largest earthquake in recorded global history, it caused $300 million in property damage and killed 115 people. The quake changed the trajectory of the 1960s, with the remainder of the decade dominated by repairs, rebuilds, and the restoration of normalcy to city life.<p>Meanwhile, another boom loomed around the corner. While Alaska rebuilt, oil companies lobbied in Juneau and Washington DC and laid the seeds to greatly expand their Alaskan production.",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
+        center: [-149.73763, 61.14841],
+        zoom: 10.4,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -441,8 +456,8 @@ var config = {
       //image: "data/images/pipelineworkers.jpg",
       //description:,
       location: {
-        center: [-149.87969, 61.15596],
-        zoom: 10.8,
+        center: [-149.73763, 61.14841],
+        zoom: 10.4,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -479,10 +494,11 @@ var config = {
       hidden: false,
       //title: "Oil Years: Construction",
       //image: "data/images/pipelineworkers.jpg",
-      description: "Residential Buildings, 1970-89",
+      description:
+        "<ul><li>Residential buildings: 1970-1989<li>Building count: 42,394</ul>",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
+        center: [-149.73763, 61.14841],
+        zoom: 10.4,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -512,8 +528,8 @@ var config = {
       description:
         "From 1970-79, Anchorage's population grew from 48,000 to 174,000. And as oil production continued, Anchorage continued to build. Many pipeline workers settled permanently in Anchorage, living there for half of their 'two weeks on, two weeks off' schedules.<p>The state treasury pumped a billion dollars of North Slope oil revenue into Anchorage construction in the ‘80s, with residential construction reaching its all-time peak in 1983. <p>From 1980-1989, the city’s population grew from 174,000-226,000.",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
+        center: [-149.73763, 61.14841],
+        zoom: 10.4,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -532,8 +548,8 @@ var config = {
       description:
         "After the oil boom, Anchorage settled into its stature as a newly significant US city. It continued building and developing its own culture as neighborhoods filled out and life evolved with the times.",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
+        center: [-149.73763, 61.14841],
+        zoom: 10.4,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -547,13 +563,14 @@ var config = {
       id: "90s2000s2",
       alignment: "right",
       hidden: false,
-      title: "Residential buildings - 1990-2008",
+      title:
+        "<ul><li>Residential buildings: 1990-2008<li>Building count: 19,033</ul>",
       //image: "data/images/westchester80s.jpg",
       //description:
       // "After the oil boom, Anchorage settled into its stature as a newly significant US city. It continued building and developing its own culture as neighborhoods filled out and life evolved with the times.",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
+        center: [-149.73763, 61.14841],
+        zoom: 10.4,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -564,12 +581,12 @@ var config = {
         {
           layer: "anch90-99",
           opacity: 0.7,
-          duration: 7000,
+          duration: 1000,
         },
         {
           layer: "anch2000-08",
           opacity: 0.7,
-          duration: 7000,
+          duration: 1000,
         },
       ],
       onChapterExit: [],
@@ -583,8 +600,8 @@ var config = {
       description:
         "Anchorage’s residential construction reached its final year of growth in 2003. Fewer residences have been built each year since.",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
+        center: [-149.73763, 61.14841],
+        zoom: 10.4,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -598,13 +615,14 @@ var config = {
       id: "2009-now2",
       alignment: "right",
       hidden: false,
-      title: "Residential buildings - 2009-2019",
+      title:
+        "<ul><li>Residential buildings: 2009-2019<li>Building count: 4037</ul>",
       //image: "data/images/IMG_9565.jpg",
       //description:
       //  "In recent years it has reached a point of crisis — an unfamiliar crisis for a city whose shortages have historically come during booms rather than periods of decline. From 2018 to 2019, home prices increased ____. From 2019-2020, they increased ____. From 2020-2021, ____. Meanwhile, rents have increased from ___ to ____ in that span. A shortage of units, stagnated construction, a diminished amount of buildable land, and an overall surge in the national housing market have made the city worse for buyers and renters than ever before. Bidding wars drive home sales well over asking price. Homes stay on the market for an average of _ days. Landlords hike rents regularly, forcing longterm Anchorage residents out of their homes.<p>Vacancy rates in apartments dropped in 2021 from 9.2% to 4.3%. A recent U.S. Census Bureau Household Pulse Survey found that more than 30% of Alaskan adults live in homes that are not current on rent or mortgages, where eviction is likely in the next two months. And between January and November 2021, more than 15,000 Alaskans accessed homeless services.<p>In short, people in Anchorage are challenged to find a place to live. And when they can, they can seldom afford it. While this housing shortage doesn’t share a cause with Anchorage’s 20th century shortages, its does share a solution: in order to house its population and encourage a return to growth and prosperity, Anchorage must build.",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
+        center: [-149.73763, 61.14841],
+        zoom: 10.4,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -629,8 +647,8 @@ var config = {
       description:
         "In recent years it has reached a point of crisis — an unfamiliar crisis for a city whose shortages have historically come during booms rather than periods of decline. From 2018 to 2019, home prices increased ____. From 2019-2020, they increased ____. From 2020-2021, ____. Meanwhile, rents have increased from ___ to ____ in that span. A shortage of units, stagnated construction, a diminished amount of buildable land, and an overall surge in the national housing market have made the city worse for buyers and renters than ever before. Bidding wars drive home sales well over asking price. Homes stay on the market for an average of _ days. Landlords hike rents regularly, forcing longterm Anchorage residents out of their homes.<p>Vacancy rates in apartments dropped in 2021 from 9.2% to 4.3%. A recent U.S. Census Bureau Household Pulse Survey found that more than 30% of Alaskan adults live in homes that are not current on rent or mortgages, where eviction is likely in the next two months. And between January and November 2021, more than 15,000 Alaskans accessed homeless services.<p>In short, people in Anchorage are challenged to find a place to live. And when they can, they can seldom afford it. While this housing shortage doesn’t share a cause with Anchorage’s 20th century shortages, its does share a solution: in order to house its population and encourage a return to growth and prosperity, Anchorage must build.",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
+        center: [-149.73763, 61.14841],
+        zoom: 10.4,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -649,8 +667,8 @@ var config = {
       description:
         "In recent years it has reached a point of crisis — an unfamiliar crisis for a city whose shortages have historically come during booms rather than periods of decline. From 2018 to 2019, home prices increased ____. From 2019-2020, they increased ____. From 2020-2021, ____. Meanwhile, rents have increased from ___ to ____ in that span. A shortage of units, stagnated construction, a diminished amount of buildable land, and an overall surge in the national housing market have made the city worse for buyers and renters than ever before. Bidding wars drive home sales well over asking price. Homes stay on the market for an average of _ days. Landlords hike rents regularly, forcing longterm Anchorage residents out of their homes.<p>Vacancy rates in apartments dropped in 2021 from 9.2% to 4.3%. A recent U.S. Census Bureau Household Pulse Survey found that more than 30% of Alaskan adults live in homes that are not current on rent or mortgages, where eviction is likely in the next two months. And between January and November 2021, more than 15,000 Alaskans accessed homeless services.<p>In short, people in Anchorage are challenged to find a place to live. And when they can, they can seldom afford it. While this housing shortage doesn’t share a cause with Anchorage’s 20th century shortages, its does share a solution: in order to house its population and encourage a return to growth and prosperity, Anchorage must build.",
       location: {
-        center: [-149.88577, 61.1654],
-        zoom: 10.07,
+        center: [-149.73763, 61.14841],
+        zoom: 10.4,
         pitch: 0.0,
         bearing: 0.0,
       },
