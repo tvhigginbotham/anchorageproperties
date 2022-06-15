@@ -73,10 +73,9 @@ var config = {
       id: "tentcity2",
       alignment: "right",
       hidden: false,
-      //title: "Residential Buildings - 1914-1925",
+      title: "1914-1925",
       //image: "data/images/tentcity.jpg",
-      description:
-        "<ul><li>Residential buildings: 1914-1925<li>Building count: 72</ul>",
+      description: "New residences built: 72",
       location: {
         center: [-149.897, 61.212],
         zoom: 13.2,
@@ -156,10 +155,9 @@ var config = {
       id: "railhub2",
       alignment: "right",
       hidden: false,
-      //title:,
+      title: "1926 - 1940",
       //image: "data/images/4thAve1920s.jpg",
-      description:
-        "<ul><li>Residential buildings: 1926-1940<li>Building count: 618</ul>",
+      description: "New residences built: 618",
       location: {
         center: [-149.86665, 61.19647],
         zoom: 11.4,
@@ -233,10 +231,9 @@ var config = {
       id: "boom",
       alignment: "right",
       hidden: false,
-      //title:
+      title: "1941-1959",
       //image: "data/images/4thAve1949.jpg",
-      description:
-        "<ul><li>Residential buildings: 1941-1959<li>Building count: 5,300</ul>",
+      description: "New residences built: 5,300",
       location: {
         center: [-149.88577, 61.1654],
         zoom: 10.07,
@@ -376,10 +373,9 @@ var config = {
       id: "earthquake2",
       alignment: "right",
       hidden: false,
-      //title:
+      title: "1961-1969",
       //image: "data/images/earthquake.jpg",
-      description:
-        "<ul><li>Residential buildings: 1961-1969<li>Building count: 7,913</ul>",
+      description: "New residences built: 7,913",
       location: {
         center: [-149.88577, 61.1654],
         zoom: 10.07,
@@ -477,10 +473,9 @@ var config = {
       id: "oilyears2",
       alignment: "right",
       hidden: false,
-      //title: "Oil Years: Construction",
+      title: "1970-1989",
       //image: "data/images/pipelineworkers.jpg",
-      description:
-        "<ul><li>Residential buildings: 1970-1989<li>Building count: 42,394</ul>",
+      description: "New residences built: 42,394",
       location: {
         center: [-149.88577, 61.1654],
         zoom: 10.07,
@@ -578,10 +573,9 @@ var config = {
       id: "90s2000s2",
       alignment: "right",
       hidden: false,
-      //title:
+      title: "1990-2008",
       //image: "data/images/westchester80s.jpg",
-      description:
-        "<ul><li>Residential buildings: 1990-2008<li>Building count: 19,033</ul>",
+      description: "New residences built: 19,033",
       location: {
         center: [-149.88577, 61.1654],
         zoom: 10.07,
@@ -609,10 +603,9 @@ var config = {
       id: "90s2000s21",
       alignment: "right",
       hidden: true,
-      //title:
+      title: "1990-2008",
       //image: "data/images/westchester80s.jpg",
-      description:
-        "<ul><li>Residential buildings: 1990-2008<li>Building count: 19,033</ul>",
+      description: "New residences built: 19,033",
       location: {
         center: [-149.88577, 61.1654],
         zoom: 10.07,
@@ -660,10 +653,9 @@ var config = {
       id: "2009-now2",
       alignment: "right",
       hidden: false,
-      //title:
+      title: "2009-2019",
       //image: "data/images/IMG_9565.jpg",
-      description:
-        "<ul><li>Residential buildings: 2009-2019<li>Building count: 4,037</ul>",
+      description: "New residences built: 4,037",
       location: {
         center: [-149.88577, 61.1654],
         zoom: 10.07,
@@ -688,8 +680,7 @@ var config = {
       hidden: true,
       //title:
       //image: "data/images/IMG_9565.jpg",
-      description:
-        "<ul><li>Residential buildings: 2009-2019<li>Building count: 4,037</ul>",
+      description: "<ul><li>2009-2019<li>New residences built: 4,037</ul>",
       location: {
         center: [-149.88577, 61.1654],
         zoom: 10.07,
