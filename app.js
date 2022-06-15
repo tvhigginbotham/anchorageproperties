@@ -15,7 +15,7 @@ var config = {
   subtitle: "A Housing History of Anchorage, Alaska",
   byline: "By Tim Higginbotham",
   footer:
-    'Data sources: Municipality of Anchorage Open Data Portal, State of Alaska Department of Natural Resources <br> Research sources: Alaska Department of Labor and Workforce Development; David Reamer, "Mid-Century Housing Crisis"; Anchorage Daily News <br> Coding source: <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a>.',
+    '<ul><li>Data sources:<br>- Municipality of Anchorage Open Data Portal<br>- State of Alaska Department of Natural Resources<br>- geojson.io<li>Research sources:<br>- Alaska Department of Labor and Workforce Development<br>- Reamer, David. "How a Severe Mid-Century Housing Crisis Left its Mark on Anchorage Neighborhoods," Anchorage Daily News, 2021<li>Image sources:<br>- Alaska State Library Digital Archives<br>- Creative Commons<br>- Remaining photos by author<li>Coding source:<br>- <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a></ul>.',
   chapters: [
     {
       id: "intro",
