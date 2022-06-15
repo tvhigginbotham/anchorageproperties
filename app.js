@@ -300,9 +300,9 @@ var config = {
       alignment: "right",
       hidden: false,
       title: "Kit Homes and Quonset Huts",
-      image: "data/images/airportheights.jpg",
+      //image: "data/images/kithome.jpg",
       description:
-        "Unprepared for its status as a boomtown, Anchorage built itself out of crisis. With an overstretched construction industry and a shortage of labor and materials (exacerbated by postwar inflation), Anchorage residents and employers built as their means allowed. Kit homes — mail-order catalog homes shipped complete with building plans and parts — became a popular option. Many of these survive today, most notably in the Airport Heights neighborhood near Merrill Field, pictured above and shown on the map. <figure><img src='data/images/kit-home-ad.jpg' alt='source: Creative Commons'/><figcaption>A catalogue ad showing the kind of mail-order home that still predominates some Anchorage neighborhoods today.</figcaption></figure>",
+        "<figure> <img src='data/images/kithome.jpeg' alt: 'source: self'><figcaption>Mail-order kit homes like this became popular during the 1950s construction boom</figcaption><figure>Unprepared for its status as a boomtown, Anchorage built itself out of crisis. With an overstretched construction industry and a shortage of labor and materials (exacerbated by postwar inflation), Anchorage residents and employers built as their means allowed. Kit homes — mail-order catalog homes shipped complete with building plans and parts — became a popular option. Many of these survive today, most notably in the Airport Heights neighborhood near Merrill Field, pictured above and shown on the map. <figure><img src='data/images/kit-home-ad.jpg' alt='source: Creative Commons'/><figcaption>A catalogue ad showing the kind of mail-order home that still predominates some Anchorage neighborhoods today.</figcaption></figure>",
       location: {
         center: [-149.82154, 61.20346],
         zoom: 13.41,
